@@ -2,7 +2,7 @@
 
 import { Hero } from "@/components/hero";
 import { ServicesSummary } from "@/components/services-summary";
-import { motion } from "framer-motion";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { ArrowRight, Recycle, ShieldCheck, Factory } from "lucide-react";
 import Link from "next/link";
 
@@ -18,13 +18,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="lg:flex lg:items-center lg:gap-32">
             
-            <motion.div 
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="lg:w-1/2 mb-20 lg:mb-0"
-            >
+            <ScrollReveal direction="right" className="lg:w-1/2 mb-20 lg:mb-0">
               <h2 className="text-emerald-600 text-[11px] font-bold uppercase tracking-[0.4em] mb-8">Padrões Globais</h2>
               <h3 className="text-4xl md:text-6xl font-black text-[#111111] mb-12 tracking-tighter leading-tight">
                 COMPROMISSO <br />SEM COMPROMISSOS.
@@ -40,7 +34,7 @@ export default function Home() {
                   { icon: Recycle, title: "Economia Circular", text: "Valorização máxima dos componentes reciclados." },
                   { icon: Factory, title: "Logística Industrial", text: "Operações dedicadas em Cantanhede e região." },
                 ].map((item, idx) => (
-                  <div key={idx} className="flex items-start space-x-6">
+                  <ScrollReveal key={idx} delay={idx * 0.1} className="flex items-start space-x-6">
                     <div className="mt-1 bg-white p-3 rounded-xl border border-gray-100 shadow-sm">
                       <item.icon className="h-5 w-5 text-emerald-600" />
                     </div>
@@ -48,7 +42,7 @@ export default function Home() {
                       <h4 className="text-[#111111] font-bold text-sm tracking-widest uppercase mb-1">{item.title}</h4>
                       <p className="text-[#6B7280] text-[15px] font-medium leading-relaxed">{item.text}</p>
                     </div>
-                  </div>
+                  </ScrollReveal>
                 ))}
               </div>
 
@@ -59,15 +53,9 @@ export default function Home() {
                 Conheça a nossa história e missão
                 <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
-            </motion.div>
+            </ScrollReveal>
 
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.98 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: true }}
-              className="lg:w-1/2"
-            >
+            <ScrollReveal direction="left" className="lg:w-1/2">
               <div className="relative group">
                 <div className="relative aspect-square bg-white rounded-[4rem] overflow-hidden border border-gray-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] flex items-center justify-center p-20">
                    <div className="text-center">
@@ -79,7 +67,7 @@ export default function Home() {
                    </div>
                 </div>
               </div>
-            </motion.div>
+            </ScrollReveal>
 
           </div>
         </div>
@@ -88,12 +76,7 @@ export default function Home() {
       {/* Final Minimalist Call to Action */}
       <section className="py-40 bg-white relative">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
+          <ScrollReveal>
             <h2 className="text-4xl md:text-6xl font-black text-[#111111] mb-10 tracking-tighter leading-tight">PREPARADO PARA <br />OTIMIZAR A SUA GESTÃO?</h2>
             <p className="text-[#6B7280] text-xl md:text-2xl mb-14 font-medium max-w-2xl mx-auto tracking-tight">
               Fale com os nossos especialistas e solicite um agendamento de recolha profissional para a sua empresa.
@@ -112,7 +95,7 @@ export default function Home() {
                 Falar com Especialista
               </Link>
             </div>
-          </motion.div>
+          </ScrollReveal>
         </div>
       </section>
     </div>
