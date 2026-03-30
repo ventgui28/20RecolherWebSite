@@ -6,10 +6,12 @@ import { ArrowRight, Recycle } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[110vh] flex items-center justify-center pt-20 overflow-hidden bg-white bg-grid-technical">
+    <section className="relative min-h-[110vh] flex items-center justify-center pt-20 overflow-hidden bg-[#FAFAFB] bg-grid-technical">
       
-      {/* Deep Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-emerald-50/10 to-transparent" />
+      {/* Background Elements - Behind everything */}
+      <div className="absolute inset-0 z-0">
+        <div className="bg-mesh-gradient" />
+      </div>
 
       {/* Hero Visual Composition */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
