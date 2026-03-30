@@ -6,7 +6,7 @@
 }
 
 :root {
-  --background: #FAFAFB; /* Luxury Silk White */
+  --background: #FAFAFB;
   --foreground: #111111;
   --card: #FFFFFF;
   --card-foreground: #111111;
@@ -14,25 +14,88 @@
   --popover-foreground: #111111;
   --primary: #10B981;
   --primary-foreground: #FFFFFF;
-  --secondary: #6B7280;
-  --secondary-foreground: #FFFFFF;
-  --muted: #F3F4F6;
-  --muted-foreground: #6B7280;
-  --accent: #F9FAFB;
+  --secondary: #94A3B8; /* Steel Blue-Grey */
+  --secondary-foreground: #111111;
+  --muted: #F1F5F9;
+  --muted-foreground: #64748B;
+  --accent: #E2E8F0;
   --accent-foreground: #111111;
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
-  --border: rgba(0, 0, 0, 0.04);
-  --input: #E5E7EB;
+  --border: rgba(0, 0, 0, 0.05);
+  --input: #E2E8F0;
   --ring: #10B981;
-  --radius: 1.5rem;
+  --radius: 2rem;
 }
 
-@keyframes float {
-  0% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(2%, 5%) scale(1.05); }
-  66% { transform: translate(-2%, 3%) scale(0.95); }
-  100% { transform: translate(0, 0) scale(1); }
+@keyframes pulse-emerald {
+  0%, 100% { transform: scale(1); opacity: 0.5; filter: blur(40px); }
+  50% { transform: scale(1.1); opacity: 0.8; filter: blur(60px); }
+}
+
+@keyframes rotate-3d {
+  0% { transform: rotate3d(1, 1, 1, 0deg); }
+  100% { transform: rotate3d(1, 1, 1, 360deg); }
+}
+
+@keyframes energy-flow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* Luxury Steel Texture */
+.bg-steel {
+  background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 50%, #F8FAFC 100%);
+  background-size: 200% 200%;
+  animation: energy-flow 15s linear infinite;
+}
+
+/* Deep Emerald Luxury Card */
+.bento-card-emerald {
+  @apply relative overflow-hidden bg-[#064E3B] text-white border border-emerald-800/50 rounded-[2.5rem] p-10 transition-all duration-700 hover:shadow-[0_40px_100px_-20px_rgba(16,185,129,0.3)];
+}
+
+/* Crystal 3D Sphere Base */
+.crystal-sphere {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle at 30% 30%, rgba(52, 211, 153, 0.4), rgba(5, 150, 105, 0.1));
+  border-radius: 50%;
+  box-shadow: 
+    inset -20px -20px 60px rgba(0, 0, 0, 0.1),
+    inset 20px 20px 60px rgba(255, 255, 255, 0.3),
+    0 0 80px rgba(16, 185, 129, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.crystal-energy-core {
+  position: absolute;
+  inset: 20%;
+  background: radial-gradient(circle, #10B981 0%, transparent 70%);
+  border-radius: 50%;
+  animation: pulse-emerald 4s infinite ease-in-out;
+}
+
+/* Steel Button Style */
+.btn-steel {
+  @apply relative overflow-hidden bg-[#111111] text-white px-10 py-4.5 rounded-2xl font-black uppercase tracking-[0.1em] transition-all duration-500 hover:bg-emerald-600 hover:shadow-[0_20px_40px_-10px_rgba(16,185,129,0.4)] active:scale-95;
+}
+
+.btn-steel::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transform: rotate(45deg);
+  transition: 0.7s;
+}
+
+.btn-steel:hover::after {
+  left: 120%;
 }
 
 * {

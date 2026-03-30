@@ -58,14 +58,18 @@ export default function Home() {
             </ScrollReveal>
 
             <ScrollReveal direction="left" className="lg:w-1/2">
-              <div className="bento-card group aspect-square flex items-center justify-center">
-                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              <div className="bento-card-emerald group aspect-square flex items-center justify-center">
+                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                  <div className="text-center relative z-10">
-                    <div className="w-24 h-24 bg-emerald-50 rounded-3xl flex items-center justify-center mx-auto mb-10 shadow-inner">
-                      <Recycle className="h-10 w-10 text-emerald-600" />
-                    </div>
-                    <p className="text-elite font-bold text-2xl md:text-3xl tracking-tighter italic mb-8">"Cuidamos do ambiente, <br />um resíduo de cada vez."</p>
-                    <div className="mt-12 w-px h-24 bg-gradient-to-b from-emerald-600 to-transparent mx-auto opacity-50" />
+                    <motion.div 
+                      animate={{ y: [0, -10, 0] }}
+                      transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                      className="w-24 h-24 bg-emerald-400/20 rounded-3xl flex items-center justify-center mx-auto mb-10 shadow-[0_0_30px_rgba(16,185,129,0.2)]"
+                    >
+                      <Recycle className="h-10 w-10 text-emerald-400" />
+                    </motion.div>
+                    <p className="text-white font-bold text-2xl md:text-3xl tracking-tighter italic mb-8">"Cuidamos do ambiente, <br />um resíduo de cada vez."</p>
+                    <div className="mt-12 w-px h-24 bg-gradient-to-b from-emerald-400 to-transparent mx-auto opacity-50" />
                  </div>
               </div>
             </ScrollReveal>
