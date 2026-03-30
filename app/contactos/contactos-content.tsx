@@ -69,8 +69,8 @@ export function ContactosContent() {
                     </div>
                     <h3 className="text-[#111111] font-bold text-xs uppercase tracking-widest">Email Corporativo</h3>
                   </div>
-                  <a href="mailto:geral@20recolher.pt" className="text-2xl md:text-3xl font-black text-[#111111] hover:text-emerald-600 transition-colors tracking-tighter">
-                    geral@20recolher.pt
+                  <a href="mailto:info@20recolher.pt" className="text-2xl md:text-3xl font-black text-[#111111] hover:text-emerald-600 transition-colors tracking-tighter">
+                    info@20recolher.pt
                   </a>
                 </motion.div>
 
@@ -88,9 +88,14 @@ export function ContactosContent() {
                     </div>
                     <h3 className="text-[#111111] font-bold text-xs uppercase tracking-widest">Atendimento Directo</h3>
                   </div>
-                  <a href="tel:+351000000000" className="text-2xl md:text-3xl font-black text-[#111111] hover:text-emerald-600 transition-colors tracking-tighter">
-                    +351 000 000 000
-                  </a>
+                  <div className="flex flex-col space-y-2">
+                    <a href="tel:+351912858819" className="text-2xl md:text-3xl font-black text-[#111111] hover:text-emerald-600 transition-colors tracking-tighter">
+                      +351 912 858 819
+                    </a>
+                    <a href="tel:+351910121412" className="text-xl font-bold text-[#6B7280] hover:text-emerald-600 transition-colors">
+                      +351 910 121 412
+                    </a>
+                  </div>
                 </motion.div>
 
                 {/* Channel: Location */}
@@ -109,7 +114,8 @@ export function ContactosContent() {
                   </div>
                   <p className="text-xl md:text-2xl font-bold text-[#111111] leading-tight tracking-tight">
                     Zona Industrial de Cantanhede, <br />
-                    Lote 00, 3060-197 Cantanhede
+                    Núcleo 1, Lote 2 Fração E <br />
+                    3060-197 Cantanhede
                   </p>
                 </motion.div>
 
@@ -181,7 +187,7 @@ export function ContactosContent() {
                   <MapPin className="h-8 w-8 text-emerald-600" />
                 </div>
                 <h4 className="text-[#111111] font-black text-2xl tracking-tighter uppercase mb-2">Cantanhede Innovation Hub</h4>
-                <p className="text-[#6B7280] font-medium text-sm tracking-widest uppercase">Zona Industrial, Lote 00</p>
+                <p className="text-[#6B7280] font-medium text-sm tracking-widest uppercase">Zona Industrial, Núcleo 1, Lote 2</p>
              </div>
              <div className="absolute inset-0 opacity-5 pointer-events-none">
                 <div className="w-full h-px bg-black absolute top-1/3 -rotate-12" />

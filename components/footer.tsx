@@ -16,8 +16,8 @@ export function Footer() {
               <span className="text-xl font-bold tracking-tighter text-white">20 Recolher</span>
             </div>
             <p className="text-[13px] leading-relaxed max-w-xs">
-              Especialistas em gestão de resíduos e REEE. 
-              Elevando os padrões de sustentabilidade e conformidade ambiental para a elite empresarial.
+              Equipa licenciada pela CCDRC, especialistas em gestão de REEE e resíduos industriais. 
+              Elevando a sustentabilidade para a elite empresarial.
             </p>
           </div>
 
@@ -39,15 +39,15 @@ export function Footer() {
             <ul className="space-y-4 text-[13px]">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-emerald-500 shrink-0" />
-                <span>Cantanhede, Portugal</span>
+                <span>Zona Industrial de Cantanhede, <br />Núcleo 1, Lote 2 Fração E</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-emerald-500 shrink-0" />
-                <span>+351 000 000 000</span>
+                <span>+351 912 858 819</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-emerald-500 shrink-0" />
-                <span>concierge@20recolher.pt</span>
+                <span>info@20recolher.pt</span>
               </li>
             </ul>
           </div>
