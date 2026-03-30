@@ -3,6 +3,7 @@
 import { Hero } from "@/components/hero";
 import { ServicesSummary } from "@/components/services-summary";
 import { ScrollReveal } from "@/components/scroll-reveal";
+import { motion } from "framer-motion";
 import { ArrowRight, Recycle, ShieldCheck, Factory } from "lucide-react";
 import Link from "next/link";
 
