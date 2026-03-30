@@ -91,8 +91,8 @@ export function Hero() {
             />
           </motion.div>
 
-          {/* Glowing Accents */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-400/10 blur-[120px] -z-10 rounded-full" />
+          {/* Glowing Accents - Reduced for Clarity */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-emerald-400/5 blur-[100px] -z-10 rounded-full" />
         </div>
 
       </div>

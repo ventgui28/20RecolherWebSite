@@ -138,24 +138,26 @@ body {
     inset 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
-/* Elite Typography Gradient - Metallic Finish */
+/* Elite Typography Gradient - Ultra Sharp Metallic Finish */
 .text-elite {
-  background: linear-gradient(180deg, #111111 20%, #444444 100%);
+  background: linear-gradient(180deg, #000000 0%, #334155 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  filter: none !important; /* Force remove any blur */
 }
 
-/* Advanced Mesh Gradient - Organic Light Nebula */
+/* Advanced Mesh Gradient - Clean Energy Aura */
 .bg-mesh-gradient {
   position: absolute;
   inset: 0;
   z-index: -1;
   background: 
-    radial-gradient(at 0% 0%, rgba(16,185,129,0.08) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, rgba(16,185,129,0.06) 0px, transparent 50%),
-    radial-gradient(at 80% 50%, rgba(16,185,129,0.04) 0px, transparent 40%),
-    radial-gradient(at 20% 80%, rgba(16,185,129,0.07) 0px, transparent 50%);
+    radial-gradient(at 0% 0%, rgba(16,185,129,0.06) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(16,185,129,0.04) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(16,185,129,0.02) 0px, transparent 40%),
+    radial-gradient(at 20% 80%, rgba(16,185,129,0.03) 0px, transparent 50%);
   pointer-events: none;
+  /* Reduced opacities to clear the view */
 }
 
 .mesh-orb-1 {
