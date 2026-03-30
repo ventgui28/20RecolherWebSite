@@ -39,26 +39,26 @@ export function Navbar() {
           
           {/* Logo Section */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <Trash2 className="h-6 w-6 text-emerald-600 transition-transform duration-300 group-hover:scale-110" />
-            <span className="text-xl font-black tracking-tighter text-[#111111]">
-              20 <span className="text-emerald-600">Recolher</span>
+            <Trash2 className="h-6 w-6 text-emerald-600 transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110" />
+            <span className="text-xl font-black tracking-tighter text-elite">
+              20 <span className="text-emerald-600 transition-colors group-hover:text-emerald-500">Recolher</span>
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-10">
+          <div className="hidden md:flex items-center space-x-12">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-[13px] font-bold text-[#111111]/60 hover:text-emerald-600 transition-colors tracking-tight"
+                className="text-[12px] font-bold text-[#111111]/50 hover:text-emerald-600 transition-all tracking-widest uppercase"
               >
                 {link.name}
               </Link>
             ))}
             <Link
               href="/pedido-recolha"
-              className="bg-[#111111] hover:bg-emerald-600 text-white text-[12px] font-bold px-6 py-2.5 rounded-xl transition-all"
+              className="bg-[#111111] hover:bg-emerald-600 text-white text-[11px] font-black px-8 py-3.5 rounded-2xl transition-all shadow-xl shadow-black/5 uppercase tracking-[0.1em]"
             >
               Pedir Recolha
             </Link>
