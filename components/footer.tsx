@@ -27,6 +27,7 @@ export function Footer() {
             <ul className="space-y-4 text-[13px]">
               <li><Link href="/sobre" className="hover:text-emerald-500 transition-colors">Nosso Legado</Link></li>
               <li><Link href="/servicos" className="hover:text-emerald-500 transition-colors">Serviços de Elite</Link></li>
+              <li><Link href="/clientes" className="hover:text-emerald-500 transition-colors">Clientes & Setores</Link></li>
               <li><Link href="/sustentabilidade" className="hover:text-emerald-500 transition-colors">Sustentabilidade</Link></li>
               <li><Link href="/contactos" className="hover:text-emerald-500 transition-colors">Contactos</Link></li>
             </ul>
