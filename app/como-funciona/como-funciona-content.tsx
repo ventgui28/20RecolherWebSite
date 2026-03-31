@@ -1,169 +1,147 @@
 "use client";
 
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 import { useRef } from "react";
 import { ScrollReveal } from "@/components/scroll-reveal";
-import { ClipboardCheck, Truck, Recycle, FileBadge, CheckCircle2 } from "lucide-react";
+import { ClipboardCheck, Truck, Recycle, FileBadge } from "lucide-react";
 import Link from "next/link";
-import { ExplodedDevice } from "@/components/exploded-device";
 import { CircularEconomyLoop } from "@/components/circular-economy-loop";
 
 const STEPS = [
   {
     id: "01",
-    title: "Análise & Agendamento",
-    subtitle: "Início do Ciclo",
-    description: "Identificamos o potencial de valorização dos seus resíduos. Um processo de concierge que assegura o início de uma logística inversa sem falhas.",
+    title: "Análise Técnica",
+    subtitle: "A Inteligência do Processo",
+    description: "Iniciamos com um diagnóstico preciso do fluxo de resíduos. Uma consultoria de elite que desenha o caminho ideal para a valorização de cada ativo eletrónico.",
     icon: ClipboardCheck,
-    color: "from-green-500/10 to-emerald-500/10",
-    features: ["Diagnóstico técnico", "Conformidade imediata", "Logística de elite"]
+    bgColor: "bg-[#F9FAFB]", // Pearl White
+    iconBg: "bg-white"
   },
   {
     id: "02",
-    title: "Recolha de Precisão",
-    subtitle: "Rastreabilidade Total",
-    description: "A nossa frota licenciada recolhe os materiais, garantindo que cada componente é rastreado desde a origem até ao destino final.",
+    title: "Logística Certificada",
+    subtitle: "Rastreabilidade de Ponta",
+    description: "Operamos uma recolha cirúrgica com frota própria licenciada. Cada quilómetro é monitorizado, garantindo a segurança total dos seus dados e materiais.",
     icon: Truck,
-    color: "from-emerald-500/10 to-teal-500/10",
-    features: ["Transporte certificado", "Segurança absoluta", "Controlo de ativos"]
+    bgColor: "bg-[#F0F4F1]", // Misty Mint
+    iconBg: "bg-white"
   },
   {
     id: "03",
-    title: "Valorização Técnica",
-    subtitle: "Economia Circular",
-    description: "Em Cantanhede, operamos o fecho do ciclo. Triagem minuciosa para extração de matérias-primas secundárias e reintrodução no mercado.",
+    title: "Triagem & Valorização",
+    subtitle: "Engenharia de Recursos",
+    description: "No nosso centro especializado, os resíduos são transformados. Aplicamos processos técnicos para extrair matérias-primas que voltam a alimentar a indústria.",
     icon: Recycle,
-    color: "from-teal-500/10 to-green-600/10",
-    features: ["Triagem de alta gama", "Zero desperdício", "Foco em REEE"]
+    bgColor: "bg-[#F9FAFB]", // Pearl White
+    iconBg: "bg-white"
   },
   {
     id: "04",
-    title: "Certificação de Elite",
-    subtitle: "Ciclo Completo",
-    description: "Emissão de e-GAR e relatórios de sustentabilidade. A prova documental de que a sua empresa opera no topo da responsabilidade ambiental.",
+    title: "Conformidade Total",
+    subtitle: "Certificação de Elite",
+    description: "Fechamos o ciclo com a emissão de guias e-GAR e relatórios de sustentabilidade detalhados. A sua empresa em total harmonia com a legislação europeia.",
     icon: FileBadge,
-    color: "from-green-600/10 to-green-900/10",
-    features: ["e-GAR Instantâneo", "Relatórios ESG", "Selos de Sustentabilidade"]
+    bgColor: "bg-[#F0F4F1]", // Misty Mint
+    iconBg: "bg-white"
   }
 ];
 
 export function ComoFuncionaContent() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const stepsRef = useRef<HTMLDivElement>(null);
-  
-  // Progresso Geral da Página
-  const { scrollYProgress: pageProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end end"]
-  });
-
-  // Progresso Específico da Secção de Passos (Onde a animação acontece)
-  const { scrollYProgress: stepsProgress } = useScroll({
-    target: stepsRef,
-    offset: ["start center", "end center"]
-  });
-
   return (
-    <div ref={containerRef} className="relative bg-transparent">
-      {/* Hero Section ... */}
-      <section className="min-h-[80vh] flex flex-col items-center justify-center px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-technical opacity-40" />
+    <div className="relative bg-white">
+      {/* Hero Section - Pure Apple Style */}
+      <section className="min-h-[90vh] flex flex-col items-center justify-center px-6 text-center">
         <ScrollReveal>
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="h1-hero text-[#0a2d10] mb-8 uppercase">
-              Ciclo de <br /><span className="text-green-600 font-black">Excelência</span>
-            </h1>
-            <p className="text-[#065F46]/60 text-xl md:text-2xl font-medium max-w-2xl mx-auto tracking-tight leading-relaxed mb-16 uppercase">
-              Engenharia de resíduos focada na economia circular e conformidade de elite.
-            </p>
-            <div className="flex flex-col items-center">
-              <div className="w-px h-24 bg-gradient-to-b from-green-500 to-transparent" />
-            </div>
-          </div>
+          <span className="inline-block text-green-600 text-xs font-black uppercase tracking-[0.5em] mb-8">Operação de Precisão</span>
+          <h1 className="h1-hero text-[#0a2d10] mb-12 uppercase">
+            Ciclo de <br /><span className="text-green-600 font-black">Excelência</span>
+          </h1>
+          <div className="w-px h-32 bg-gradient-to-b from-green-500 to-transparent mx-auto" />
         </ScrollReveal>
       </section>
 
-      {/* Immersive Scroll Section */}
-      <section ref={stepsRef} className="relative max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row gap-20">
-          
-          {/* Left Column: Content Scroll */}
-          <div className="w-full md:w-1/2 space-y-[60vh] md:space-y-[80vh] pb-[40vh]">
-            {STEPS.map((step) => (
-              <div key={step.id} className="min-h-[50vh] flex flex-col justify-center">
-                <ScrollReveal direction="right">
-                  <div className="flex items-center space-x-6 mb-10">
-                    <span className="text-7xl font-black text-green-500/10 tracking-tighter">{step.id}</span>
-                    <div className="w-12 h-px bg-green-600/20" />
-                    <span className="text-green-600 text-[11px] font-black uppercase tracking-[0.5em]">{step.subtitle}</span>
+      {/* Steps - Gallery Sections Style */}
+      {STEPS.map((step, index) => (
+        <section key={step.id} className={`py-32 md:py-60 ${step.bgColor} px-6 overflow-hidden`}>
+          <div className="max-w-7xl mx-auto">
+            <div className={`flex flex-col md:flex-row items-center gap-20 md:gap-32 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
+              
+              {/* Text Side */}
+              <div className="w-full md:w-1/2">
+                <ScrollReveal direction={index % 2 === 0 ? "right" : "left"}>
+                  <div className="flex items-center space-x-4 mb-10 opacity-40">
+                    <span className="text-4xl font-black text-[#0a2d10]">{step.id}</span>
+                    <div className="w-8 h-px bg-[#0a2d10]" />
                   </div>
                   
-                  <h3 className="text-5xl md:text-7xl font-black text-[#0a2d10] mb-10 tracking-tighter uppercase leading-[0.9]">
+                  <h2 className="text-5xl md:text-8xl font-black text-[#0a2d10] mb-8 tracking-tighter uppercase leading-[0.85]">
                     {step.title}
-                  </h3>
+                  </h2>
                   
-                  <p className="text-[#065F46]/60 text-xl md:text-2xl font-medium leading-relaxed mb-14 tracking-tight max-w-xl">
+                  <p className="text-[#0a2d10]/60 text-xl md:text-2xl font-medium leading-relaxed mb-6 tracking-tight max-w-xl">
+                    {step.subtitle}
+                  </p>
+                  
+                  <p className="text-[#0a2d10]/40 text-lg md:text-xl leading-relaxed mb-12 tracking-tight max-w-lg">
                     {step.description}
                   </p>
-
-                  <ul className="grid grid-cols-1 gap-6">
-                    {step.features.map((feature, fIdx) => (
-                      <li key={fIdx} className="flex items-center space-x-4 text-[#0a2d10] text-[12px] font-black uppercase tracking-widest">
-                        <div className="h-2 w-2 rounded-full bg-green-500" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </ScrollReveal>
               </div>
-            ))}
-          </div>
 
-          {/* Right Column: Sticky Visual Anchor */}
-          <div className="hidden md:block w-1/2 h-screen sticky top-0 overflow-hidden">
-            <div className="absolute inset-0 flex items-center justify-center">
-               <ExplodedDevice progress={stepsProgress} />
+              {/* Visual Side - Hardware Aesthetic */}
+              <div className="w-full md:w-1/2 flex justify-center">
+                <ScrollReveal direction={index % 2 === 0 ? "left" : "right"}>
+                  <div className="relative w-64 h-64 md:w-96 md:h-96 flex items-center justify-center">
+                     {/* Background Physicality (Soft Shadow instead of box) */}
+                     <div className="absolute inset-0 bg-white rounded-full shadow-[0_40px_100px_rgba(0,0,0,0.03)] scale-90" />
+                     
+                     {/* The Icon - Clean and Imposing */}
+                     <motion.div 
+                       whileHover={{ scale: 1.02 }}
+                       className="relative z-10 w-40 h-40 md:w-56 md:h-56 bg-white rounded-[3rem] shadow-[0_20px_60px_rgba(0,0,0,0.05)] border border-gray-50 flex items-center justify-center"
+                     >
+                        <step.icon className="w-16 h-16 md:w-24 md:h-24 text-green-600" strokeWidth={0.8} />
+                        
+                        {/* Material Detail */}
+                        <div className="absolute inset-0 rounded-[3rem] border-t border-white pointer-events-none" />
+                     </motion.div>
+
+                     {/* Soft Ambient Light */}
+                     <div className="absolute -bottom-10 w-[120%] h-20 bg-black/5 blur-[60px] rounded-full" />
+                  </div>
+                </ScrollReveal>
+              </div>
+
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ))}
 
-      {/* Circular Economy Loop Section */}
-      <section className="py-40 bg-[#f8fdf9]/50 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+      {/* Circular Economy Section */}
+      <section className="py-40 bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <ScrollReveal>
-            <div className="text-center mb-24">
-              <h2 className="text-4xl md:text-7xl font-black text-[#0a2d10] mb-6 tracking-tight uppercase">
-                Economia <br /><span className="text-green-600">Circular</span>
-              </h2>
-              <p className="text-[#065F46]/60 text-lg md:text-xl font-medium max-w-2xl mx-auto tracking-tight">
-                O nosso processo não termina na gestão. Reintroduzimos valor no mercado através da valorização certificada de matérias-primas secundárias.
-              </p>
-            </div>
-          </ScrollReveal>
-          
-          <ScrollReveal delay={0.2}>
+            <h2 className="text-4xl md:text-7xl font-black text-[#0a2d10] mb-24 tracking-tighter uppercase">
+              Economia <span className="text-green-600">Circular</span>
+            </h2>
             <CircularEconomyLoop />
           </ScrollReveal>
         </div>
-        
-        {/* Background Accent */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-radial from-green-50/50 to-transparent opacity-50 -z-1" />
       </section>
 
       {/* CTA Section */}
-      <section className="py-40 bg-transparent">
+      <section className="py-60 bg-[#0a2d10] text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <ScrollReveal>
-            <h2 className="text-4xl md:text-6xl font-black text-[#0a2d10] mb-12 tracking-tight uppercase">
-              Pronto para <br /><span className="text-green-600">Valorizar?</span>
+            <h2 className="text-5xl md:text-8xl font-black mb-16 tracking-tighter uppercase leading-none">
+              Lidere a <br /><span className="text-green-500">Mudança</span>
             </h2>
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-8">
-              <Link href="/pedido-recolha" className="btn-elite px-14 py-6">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
+              <Link href="/pedido-recolha" className="btn-elite px-16 py-7 !bg-white !text-[#0a2d10]">
                 Solicitar Recolha
               </Link>
-              <Link href="/contactos" className="text-sm font-bold uppercase tracking-[0.2em] text-[#0a2d10] border-b-2 border-green-200 hover:border-green-600 transition-all pb-1">
-                Falar com consultor
+              <Link href="/contactos" className="text-sm font-black uppercase tracking-[0.3em] border-b-2 border-green-500/30 hover:border-green-500 transition-all pb-2">
+                Contactar Especialista
               </Link>
             </div>
           </ScrollReveal>
