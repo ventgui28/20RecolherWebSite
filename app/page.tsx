@@ -28,7 +28,7 @@ export default function Home() {
               </div>
               
               <h3 className="text-5xl md:text-8xl font-black text-[#012F24] mb-16 tracking-[-0.06em] leading-[0.85] uppercase">
-                ZERO <br /><span className="text-emerald-600">COMPROMISSOS.</span>
+                ZERO <br /><span className="text-emerald-600">COMPROMISSO</span>
               </h3>
               
               <p className="text-[#065F46]/70 text-xl md:text-2xl mb-20 font-medium leading-relaxed max-w-xl tracking-tight">

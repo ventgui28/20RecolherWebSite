@@ -6,7 +6,7 @@ import { ArrowRight, Recycle, Sparkles } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden bg-white">
+    <section className="relative min-h-screen flex items-center justify-center pt-12 pb-20 overflow-hidden bg-white">
       
       {/* Background Architectural Elements */}
       <div className="absolute inset-0 z-0">

@@ -69,13 +69,13 @@
 
 /* Elite Glassmorphism - Floating Crystal */
 .glass {
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(24px) saturate(180%);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  border: 1px solid rgba(16, 185, 129, 0.1);
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(28px) saturate(200%);
+  -webkit-backdrop-filter: blur(28px) saturate(200%);
+  border: 1px solid rgba(16, 185, 129, 0.08);
   box-shadow: 
     0 8px 32px -4px rgba(16, 185, 129, 0.05),
-    inset 0 0 40px rgba(255, 255, 255, 0.3);
+    inset 0 0 80px rgba(255, 255, 255, 0.4);
 }
 
 /* Elite Typography - Ultra Sharp */
@@ -87,7 +87,7 @@
 
 /* Luxury Bento Card */
 .bento-card {
-  @apply relative overflow-hidden bg-white border border-emerald-100/50 rounded-[3rem] p-12 transition-all duration-700 hover:border-emerald-300/50 hover:shadow-[0_40px_100px_-20px_rgba(16,185,129,0.08)];
+  @apply relative overflow-hidden bg-white border border-emerald-100/30 rounded-[3rem] p-12 transition-all duration-700 hover:border-emerald-300/40 hover:shadow-[0_40px_100px_-20px_rgba(16,185,129,0.06)];
 }
 
 .bento-card-emerald {
@@ -106,15 +106,75 @@
   @apply relative overflow-hidden bg-[#10B981] text-white px-10 py-5 rounded-full font-bold uppercase tracking-[0.2em] text-[11px] transition-all duration-500 hover:bg-[#059669] hover:shadow-[0_20px_50px_-10px_rgba(16,185,129,0.4)] active:scale-95 flex items-center justify-center;
 }
 
+.btn-elite::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+.btn-elite:hover::after {
+  opacity: 1;
+}
+
 .btn-elite-outline {
   @apply relative overflow-hidden bg-transparent border-2 border-[#10B981] text-[#10B981] px-10 py-4.5 rounded-full font-bold uppercase tracking-[0.2em] text-[11px] transition-all duration-500 hover:bg-[#10B981] hover:text-white active:scale-95 flex items-center justify-center;
 }
 
+/* Elite High-Performance Background */
+.bg-luxury-layers {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: #F0F2F1; /* Crisp Pearl Gray for depth */
+  pointer-events: none;
+}
+
+/* Layer 2: Static Ultra-fine Grain (No Lag) */
+.bg-luxury-layers-grain {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* Clear Depth Separation: Content cards MUST be Pure White */
+.bento-card, .bento-card-emerald, .glass {
+  @apply shadow-[0_20px_50px_-15px_rgba(0,0,0,0.05)];
+}
+
 body {
-  background-color: var(--background);
+  background-color: #F0F2F1;
   color: var(--foreground);
   font-feature-settings: "ss01", "ss02", "cv01", "cv02";
   overflow-x: hidden;
+}
+
+/* Depth Classes for Content Layers */
+.layer-float {
+  @apply relative z-10 bg-white/80 backdrop-blur-md border border-white/40 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.03)];
+  transform: translateZ(20px);
+}
+
+.layer-ground {
+  @apply relative z-0;
+  transform: translateZ(0);
+}
+
+body {
+  background-color: #FFFFFF;
+  color: var(--foreground);
+  font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  overflow-x: hidden;
+  perspective: 1000px; /* Enable 3D depth */
 }
 
 * {

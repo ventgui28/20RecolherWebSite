@@ -80,39 +80,63 @@ export function Navbar() {
       {/* Mobile menu */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: -20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.95, y: -20 }}
-            className="absolute top-24 left-6 right-6 glass rounded-[2.5rem] p-10 md:hidden shadow-2xl border border-emerald-100/50"
-          >
-            <div className="flex flex-col space-y-8">
-              {NAV_LINKS.map((link, idx) => (
-                <motion.div
-                  key={link.name}
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: idx * 0.05 }}
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsOpen(false)}
+              className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
+            />
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", damping: 30, stiffness: 300 }}
+              className="fixed top-0 right-0 bottom-0 w-[85%] bg-white z-50 md:hidden flex flex-col p-12 shadow-[-20px_0_80px_rgba(0,0,0,0.1)]"
+            >
+              <div className="flex justify-between items-center mb-20">
+                <div className="bg-[#10B981] p-2 rounded-xl">
+                  <Recycle className="h-4 w-4 text-white" />
+                </div>
+                <button
+                  onClick={() => setIsOpen(false)}
+                  className="p-3 bg-gray-50 rounded-full text-black"
                 >
-                  <Link
-                    href={link.href}
-                    className="text-2xl font-black text-[#012F24] tracking-tighter hover:text-emerald-600 transition-colors flex items-center justify-between"
-                    onClick={() => setIsOpen(false)}
+                  <X className="h-6 w-6" />
+                </button>
+              </div>
+
+              <div className="flex flex-col space-y-10">
+                {NAV_LINKS.map((link, idx) => (
+                  <motion.div
+                    key={link.name}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.1 + idx * 0.1 }}
                   >
-                    {link.name}
-                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                  </Link>
-                </motion.div>
-              ))}
-              <Link
-                href="/pedido-recolha"
-                className="btn-elite w-full py-6 text-[13px]"
-                onClick={() => setIsOpen(false)}
-              >
-                Solicitar Agendamento
-              </Link>
-            </div>
-          </motion.div>
+                    <Link
+                      href={link.href}
+                      className="text-4xl font-black text-[#012F24] tracking-tighter hover:text-emerald-600 transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {link.name}
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+
+              <div className="mt-auto">
+                <Link
+                  href="/pedido-recolha"
+                  className="btn-elite w-full py-7 text-[13px]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Solicitar Agendamento
+                </Link>
+              </div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </nav>
