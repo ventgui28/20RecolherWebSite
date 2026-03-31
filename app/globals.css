@@ -54,7 +54,7 @@
   background-image: url("https://grainy-gradients.vercel.app/noise.svg");
   opacity: 0.012; 
   pointer-events: none;
-  z-index: 99;
+  z-index: 5; /* Lower than navbar (50) */
   animation: grain 8s steps(10) infinite;
 }
 
@@ -69,10 +69,10 @@
 
 /* Elite Glassmorphism - Floating Crystal */
 .glass {
-  background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(28px) saturate(200%);
-  -webkit-backdrop-filter: blur(28px) saturate(200%);
-  border: 1px solid rgba(52, 191, 73, 0.08);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(52, 191, 73, 0.1);
   box-shadow: 
     0 8px 32px -4px rgba(52, 191, 73, 0.05),
     inset 0 0 80px rgba(255, 255, 255, 0.4);
@@ -132,7 +132,7 @@
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-color: #f7faf8; /* Crisp Green-Gray for depth */
+  background-color: #FFFFFF;
   pointer-events: none;
 }
 
@@ -141,32 +141,14 @@
   position: fixed;
   inset: 0;
   z-index: -1;
-  opacity: 0.03;
+  opacity: 0.02;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   pointer-events: none;
 }
 
 /* Clear Depth Separation: Content cards MUST be Pure White */
-.bento-card, .bento-card-ocean, .glass {
+.bento-card, .bento-card-green, .glass {
   @apply shadow-[0_20px_50px_-15px_rgba(0,0,0,0.05)];
-}
-
-body {
-  background-color: #F0F2F1;
-  color: var(--foreground);
-  font-feature-settings: "ss01", "ss02", "cv01", "cv02";
-  overflow-x: hidden;
-}
-
-/* Depth Classes for Content Layers */
-.layer-float {
-  @apply relative z-10 bg-white/80 backdrop-blur-md border border-white/40 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.03)];
-  transform: translateZ(20px);
-}
-
-.layer-ground {
-  @apply relative z-0;
-  transform: translateZ(0);
 }
 
 body {
@@ -174,8 +156,8 @@ body {
   color: var(--foreground);
   font-feature-settings: "ss01", "ss02", "cv01", "cv02";
   overflow-x: hidden;
-  perspective: 1000px; /* Enable 3D depth */
   cursor: default !important;
+  min-height: 100vh;
 }
 
 * {
@@ -186,6 +168,7 @@ body {
 a, button, [role="button"] {
   cursor: pointer !important;
 }
+
 
 
 
