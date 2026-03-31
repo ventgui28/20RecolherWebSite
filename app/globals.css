@@ -67,6 +67,19 @@
   mask-image: radial-gradient(circle at center, black, transparent 80%);
 }
 
+.bg-gradient-radial {
+  background-image: radial-gradient(circle at center, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(
+    90deg,
+    #d4af37 0%,
+    #fcf6ba 45%,
+    #d4af37 100%
+  );
+}
+
 /* Elite Glassmorphism - Floating Crystal */
 .glass {
   background: rgba(255, 255, 255, 0.7);
