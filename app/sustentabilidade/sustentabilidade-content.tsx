@@ -66,7 +66,7 @@ export function SustentabilidadeContent() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-[#6B7280] text-xl md:text-2xl font-medium leading-relaxed tracking-tight"
+              className="text-gray-800 text-xl md:text-2xl font-bold leading-relaxed tracking-tight"
             >
               Na 20 Recolher, a sustentabilidade não é um conceito — é o nosso código de conduta. Gerimos resíduos com a precisão necessária para preservar o ecossistema e a saúde humana.
             </motion.p>
@@ -91,7 +91,7 @@ export function SustentabilidadeContent() {
                   <stat.icon className="h-5 w-5 text-green-600" />
                 </div>
                 <div className="text-5xl font-black text-[#111111] tracking-tighter mb-2 italic">{stat.value}</div>
-                <div className="text-green-600 text-[11px] font-bold uppercase tracking-[0.2em]">{stat.label}</div>
+                <div className="text-green-600 text-[11px] font-black uppercase tracking-[0.2em]">{stat.label}</div>
               </motion.div>
             ))}
           </div>
@@ -116,7 +116,7 @@ export function SustentabilidadeContent() {
                     <pillar.icon className="h-8 w-8 text-green-600" />
                   </div>
                   <h3 className="text-4xl md:text-5xl font-black text-[#111111] mb-8 tracking-tighter uppercase">{pillar.title}</h3>
-                  <p className="text-[#6B7280] text-lg font-medium leading-relaxed mb-10 max-w-xl">
+                  <p className="text-gray-800 text-lg font-bold leading-relaxed mb-10 max-w-xl">
                     {pillar.description}
                   </p>
                   <div className="w-20 h-1 bg-green-600/20" />
@@ -150,13 +150,13 @@ export function SustentabilidadeContent() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left max-w-4xl mx-auto">
               <div className="space-y-4">
                 <h4 className="text-white font-bold text-lg tracking-tight">O Nosso Compromisso</h4>
-                <p className="text-zinc-500 font-medium text-[15px] leading-relaxed">
+                <p className="text-white/80 font-bold text-[15px] leading-relaxed">
                   Asseguramos que cada componente de resíduo eletrónico recolhido é encaminhado para destinos certificados, evitando a libertação de substâncias nocivas para a saúde humana e para o solo.
                 </p>
               </div>
               <div className="space-y-4">
                 <h4 className="text-white font-bold text-lg tracking-tight">O Valor da Confiança</h4>
-                <p className="text-zinc-500 font-medium text-[15px] leading-relaxed">
+                <p className="text-white/80 font-bold text-[15px] leading-relaxed">
                   Ao escolher a 20 Recolher, a sua empresa integra uma rede de economia circular que valoriza materiais e promove um futuro regenerativo em Cantanhede e arredores.
                 </p>
               </div>

@@ -75,7 +75,7 @@ export function ClientesContent() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-[#6B7280] text-xl md:text-2xl font-medium leading-relaxed tracking-tight"
+              className="text-gray-800 text-xl md:text-2xl font-bold leading-relaxed tracking-tight"
             >
               A 20 Recolher adapta-se aos desafios específicos de cada setor, garantindo que a gestão de resíduos é um processo invisível e impecável para a sua organização.
             </motion.p>
@@ -100,12 +100,12 @@ export function ClientesContent() {
                   <sector.icon className="h-7 w-7" />
                 </div>
                 <h3 className="text-2xl font-bold text-[#111111] mb-4 tracking-tighter uppercase">{sector.title}</h3>
-                <p className="text-[#6B7280] font-medium leading-relaxed mb-8 text-[15px]">
+                <p className="text-black/80 font-bold leading-relaxed mb-8 text-[15px]">
                   {sector.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {sector.tags.map((tag) => (
-                    <span key={tag} className="px-3 py-1 bg-gray-50 text-gray-500 text-[10px] font-bold uppercase tracking-widest rounded-lg border border-gray-100">
+                    <span key={tag} className="px-3 py-1 bg-gray-50 text-black/60 text-[10px] font-black uppercase tracking-widest rounded-lg border border-gray-200">
                       {tag}
                     </span>
                   ))}
@@ -126,11 +126,11 @@ export function ClientesContent() {
               <p className="text-3xl md:text-5xl font-black text-[#111111] tracking-tighter leading-tight mb-12 uppercase italic">
                 "A CONFIANÇA É O NOSSO <br />RESÍDUO MAIS PRECIOSO."
               </p>
-              <div className="space-y-6 text-[#6B7280] text-lg font-medium leading-relaxed max-w-xl">
+              <div className="space-y-6 text-black/80 text-lg font-bold leading-relaxed max-w-xl">
                 <p>
                   Não somos apenas uma empresa de recolha; somos um parceiro estratégico que entende as nuances de cada instituição.
                 </p>
-                <div className="flex items-center space-x-3 text-green-600 font-bold text-sm tracking-widest uppercase pt-6">
+                <div className="flex items-center space-x-3 text-green-600 font-black text-sm tracking-widest uppercase pt-6">
                   <ShieldCheck className="h-6 w-6" />
                   <span>Conformidade Documental Absoluta</span>
                 </div>
@@ -148,7 +148,7 @@ export function ClientesContent() {
                       "Conservatórias",
                       "Banca & Seguros"
                     ].map((item) => (
-                      <div key={item} className="flex items-center space-x-3 text-[#111111] font-bold text-sm">
+                      <div key={item} className="flex items-center space-x-3 text-[#111111] font-black text-sm">
                         <CheckCircle2 className="h-5 w-5 text-green-600" />
                         <span className="tracking-tight uppercase">{item}</span>
                       </div>
@@ -168,7 +168,7 @@ export function ClientesContent() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.05)_0,transparent_70%)]" />
         <div className="max-w-4xl mx-auto px-6 relative z-10">
           <h2 className="text-3xl md:text-5xl font-black text-white mb-10 tracking-tighter uppercase leading-tight">PREPARADO PARA SER <br />O PRÓXIMO PARCEIRO?</h2>
-          <p className="text-zinc-400 text-lg md:text-xl font-medium mb-16 opacity-80 max-w-2xl mx-auto">
+          <p className="text-white/80 text-lg md:text-xl font-bold mb-16 max-w-2xl mx-auto">
             Junte-se às dezenas de entidades que já confiam na 20 Recolher para uma gestão de resíduos irrepreensível.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8">

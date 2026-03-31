@@ -40,7 +40,7 @@ export function ContactosContent() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-[#6B7280] text-xl md:text-2xl font-medium leading-relaxed tracking-tight max-w-3xl"
+            className="text-gray-800 text-xl md:text-2xl font-bold leading-relaxed tracking-tight max-w-3xl"
           >
             Estamos prontos para desenhar a solução de gestão de resíduos que a sua empresa merece. Contacte-nos através dos nossos canais diretos ou utilize o formulário abaixo.
           </motion.p>
@@ -67,7 +67,7 @@ export function ContactosContent() {
                     <div className="w-10 h-10 bg-green-50 rounded-xl flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
                       <Mail className="h-5 w-5" />
                     </div>
-                    <h3 className="text-[#111111] font-bold text-xs uppercase tracking-widest">Email Corporativo</h3>
+                    <h3 className="text-[#111111] font-black text-xs uppercase tracking-widest">Email Corporativo</h3>
                   </div>
                   <a href="mailto:info@20recolher.pt" className="text-2xl md:text-3xl font-black text-[#111111] hover:text-green-600 transition-colors tracking-tighter">
                     info@20recolher.pt
@@ -86,13 +86,13 @@ export function ContactosContent() {
                     <div className="w-10 h-10 bg-green-50 rounded-xl flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
                       <Phone className="h-5 w-5" />
                     </div>
-                    <h3 className="text-[#111111] font-bold text-xs uppercase tracking-widest">Atendimento Directo</h3>
+                    <h3 className="text-[#111111] font-black text-xs uppercase tracking-widest">Atendimento Directo</h3>
                   </div>
                   <div className="flex flex-col space-y-2">
                     <a href="tel:+351912858819" className="text-2xl md:text-3xl font-black text-[#111111] hover:text-green-600 transition-colors tracking-tighter">
                       +351 912 858 819
                     </a>
-                    <a href="tel:+351910121412" className="text-xl font-bold text-[#6B7280] hover:text-green-600 transition-colors">
+                    <a href="tel:+351910121412" className="text-xl font-bold text-gray-800 hover:text-green-600 transition-colors">
                       +351 910 121 412
                     </a>
                   </div>
@@ -110,9 +110,9 @@ export function ContactosContent() {
                     <div className="w-10 h-10 bg-green-50 rounded-xl flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
                       <MapPin className="h-5 w-5" />
                     </div>
-                    <h3 className="text-[#111111] font-bold text-xs uppercase tracking-widest">Sede e Logística</h3>
+                    <h3 className="text-[#111111] font-black text-xs uppercase tracking-widest">Sede e Logística</h3>
                   </div>
-                  <p className="text-xl md:text-2xl font-bold text-[#111111] leading-tight tracking-tight">
+                  <p className="text-xl md:text-2xl font-black text-[#111111] leading-tight tracking-tight">
                     Zona Industrial de Cantanhede, <br />
                     Núcleo 1, Lote 2 Fração E <br />
                     3060-197 Cantanhede
@@ -127,7 +127,7 @@ export function ContactosContent() {
                   transition={{ delay: 0.3 }}
                   className="pt-8 border-t border-gray-100"
                 >
-                  <div className="flex items-center space-x-3 text-[#6B7280] font-medium text-sm">
+                  <div className="flex items-center space-x-3 text-gray-800 font-bold text-sm">
                     <Clock className="h-4 w-4" />
                     <span>Segunda — Sexta: 09:00 - 18:00</span>
                   </div>
@@ -142,26 +142,26 @@ export function ContactosContent() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="bg-white/40 backdrop-blur-sm rounded-[3rem] p-8 md:p-16 border border-gray-100 shadow-[0_30px_60px_rgba(0,0,0,0.02)]"
+                className="bg-white rounded-[3rem] p-8 md:p-16 border border-gray-100 shadow-[0_30px_60px_rgba(0,0,0,0.02)]"
               >
                 <form onSubmit={handleSubmit} className="space-y-8">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-2">
                       <label className="text-[10px] font-bold uppercase tracking-widest text-[#111111]">Nome Completo</label>
-                      <input type="text" placeholder="Ex: João Silva" className="w-full px-6 py-4 bg-white/80 border-none rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all placeholder:text-gray-200 font-medium" />
+                      <input type="text" placeholder="Ex: João Silva" className="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all placeholder:text-gray-400 font-medium" />
                     </div>
                     <div className="space-y-2">
                       <label className="text-[10px] font-bold uppercase tracking-widest text-[#111111]">Email Profissional</label>
-                      <input type="email" placeholder="nome@empresa.pt" className="w-full px-6 py-4 bg-white/80 border-none rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all placeholder:text-gray-200 font-medium" />
+                      <input type="email" placeholder="nome@empresa.pt" className="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all placeholder:text-gray-400 font-medium" />
                     </div>
                   </div>
                   <div className="space-y-2">
                     <label className="text-[10px] font-bold uppercase tracking-widest text-[#111111]">Assunto da Consulta</label>
-                    <input type="text" placeholder="Ex: Gestão de REEE Industriais" className="w-full px-6 py-4 bg-white/80 border-none rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all placeholder:text-gray-200 font-medium" />
+                    <input type="text" placeholder="Ex: Gestão de REEE Industriais" className="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all placeholder:text-gray-400 font-medium" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-[10px] font-bold uppercase tracking-widest text-[#111111]">A sua Mensagem</label>
-                    <textarea rows={6} placeholder="Descreva sucintamente a sua necessidade..." className="w-full px-6 py-4 bg-white/80 border-none rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all placeholder:text-gray-200 font-medium resize-none"></textarea>
+                    <textarea rows={6} placeholder="Descreva sucintamente a sua necessidade..." className="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all placeholder:text-gray-400 font-medium resize-none"></textarea>
                   </div>
                   <button 
                     type="submit"
@@ -185,7 +185,7 @@ export function ContactosContent() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="group relative w-full h-[600px] rounded-[3.5rem] overflow-hidden border border-white/20 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.15)] bg-white/10 backdrop-blur-md"
+            className="group relative w-full h-[600px] rounded-[3.5rem] overflow-hidden border border-gray-100 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.15)] bg-white/10 backdrop-blur-md"
           >
             {/* Elegant Map Controls & Info Card - Restored */}
             <div className="absolute top-10 left-10 z-20 pointer-events-none md:pointer-events-auto">
@@ -193,7 +193,7 @@ export function ContactosContent() {
                 initial={{ x: -20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.3 }}
-                className="bg-white/80 backdrop-blur-xl p-8 rounded-[2.5rem] border border-white/50 shadow-2xl max-w-sm"
+                className="bg-white/90 backdrop-blur-xl p-8 rounded-[2.5rem] border border-white shadow-2xl max-w-sm"
               >
                 <div className="flex items-center space-x-3 mb-4">
                   <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
@@ -202,7 +202,7 @@ export function ContactosContent() {
                 <h4 className="text-2xl font-black text-[#111111] tracking-tighter mb-2 leading-none uppercase">
                   Zona Industrial <br /> de Cantanhede
                 </h4>
-                <p className="text-[#6B7280] text-sm font-medium mb-8 leading-relaxed">
+                <p className="text-gray-800 text-sm font-bold mb-8 leading-relaxed">
                   Núcleo 1, Lote 2 — Fração E <br />
                   3060-197 Cantanhede, Portugal
                 </p>

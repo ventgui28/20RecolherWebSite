@@ -99,7 +99,7 @@ export default function Home() {
                         <Factory className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <div className="text-[10px] font-black text-[#065F46]/40 uppercase tracking-widest">Base de Operações</div>
+                        <div className="text-[10px] font-black text-[#0a2d10]/60 uppercase tracking-widest">Base de Operações</div>
                         <div className="text-lg font-black tracking-tight text-[#0a2d10]">Cantanhede, PT</div>
                       </div>
                    </div>
@@ -120,7 +120,7 @@ export default function Home() {
             <motion.div
               animate={{ scale: [1, 1.05, 1] }}
               transition={{ duration: 4, repeat: Infinity }}
-              className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-12 border border-green-100"
+              className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-12 border border-green-200"
             >
               <Zap className="h-8 w-8 text-green-600" />
             </motion.div>
@@ -129,7 +129,7 @@ export default function Home() {
               REDEFINE O TEU <br /><span className="text-green-600">IMPACTO.</span>
             </h2>
             
-            <p className="text-[#065F46]/60 text-xl md:text-2xl mb-20 font-medium max-w-2xl mx-auto tracking-tight leading-relaxed">
+            <p className="text-gray-800 text-xl md:text-2xl mb-20 font-bold max-w-2xl mx-auto tracking-tight leading-relaxed">
               Junte-se à rede de parceiros que está a moldar a nova era da sustentabilidade industrial.
             </p>
             
@@ -156,6 +156,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 

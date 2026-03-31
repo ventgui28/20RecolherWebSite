@@ -68,9 +68,9 @@ export function SobreContent() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-[#6B7280] text-xl md:text-2xl font-medium leading-relaxed tracking-tight"
+              className="text-gray-800 text-xl md:text-2xl font-bold leading-relaxed tracking-tight"
             >
-              Somos uma equipa jovem e dinâmica licenciada pela <span className="text-[#111111] font-bold underline decoration-green-500/30 underline-offset-4">CCDRC</span>, dedicada à proteção do meio ambiente através da gestão rigorosa de resíduos.
+              Somos uma equipa jovem e dinâmica licenciada pela <span className="text-[#111111] font-black underline decoration-green-500/30 underline-offset-4">CCDRC</span>, dedicada à proteção do meio ambiente através da gestão rigorosa de resíduos.
             </motion.p>
           </div>
         </div>
@@ -87,15 +87,15 @@ export function SobreContent() {
               className="mb-16 lg:mb-0 lg:sticky lg:top-32"
             >
               <h2 className="text-[#111111] text-3xl font-black tracking-tighter mb-8 uppercase">A Nossa Jornada.</h2>
-              <div className="space-y-8 text-[#6B7280] text-lg font-medium leading-relaxed">
+              <div className="space-y-8 text-black/80 text-lg font-bold leading-relaxed">
                 <p>
-                  Depois de 6 anos a operar em Tentúgal, mudámos em Novembro de 2022 para a <span className="text-[#111111]">Zona Industrial de Cantanhede</span>. Ocupamos agora um espaço maior e com melhores condições para dar resposta à crescente procura dos nossos serviços.
+                  Depois de 6 anos a operar em Tentúgal, mudámos em Novembro de 2022 para a <span className="text-[#111111] font-black underline decoration-green-500/20">Zona Industrial de Cantanhede</span>. Ocupamos agora um espaço maior e com melhores condições para dar resposta à crescente procura dos nossos serviços.
                 </p>
                 <p>
                   O nosso foco principal é a recolha e reciclagem de equipamentos Informáticos, Elétricos, Eletrónicos (REEE) e Consumíveis de impressão. Entendemos que o melhor destino é o tratamento correto, neutralizando substâncias perigosas para a saúde humana.
                 </p>
                 <p>
-                  Trabalhamos sobretudo no mercado empresarial e no estado, sendo parceiros de confiança de <span className="text-[#111111]">Conservatórias, Tribunais e Escolas</span>.
+                  Trabalhamos sobretudo no mercado empresarial e no estado, sendo parceiros de confiança de <span className="text-[#111111] font-black">Conservatórias, Tribunais e Escolas</span>.
                 </p>
               </div>
             </motion.div>
@@ -116,7 +116,7 @@ export function SobreContent() {
                   </div>
                   <div className="flex-1 pb-10 border-b border-gray-100 group-last:border-none">
                     <h3 className="text-[#111111] font-bold text-lg mb-2 uppercase">{milestone.title}</h3>
-                    <p className="text-[#6B7280] text-[15px] font-medium leading-relaxed">
+                    <p className="text-gray-800 text-[15px] font-bold leading-relaxed">
                       {milestone.description}
                     </p>
                   </div>
@@ -143,7 +143,7 @@ export function SobreContent() {
             <p className="text-3xl md:text-5xl font-black text-[#111111] tracking-tighter leading-tight mb-12 italic">
               "PEQUENAS ATITUDES TÊM UM EFEITO MULTIPLICADOR, CAPAZ DE UMA MUDANÇA EM LARGA ESCALA."
             </p>
-            <p className="text-[#6B7280] text-lg md:text-xl font-medium leading-relaxed max-w-2xl mx-auto">
+            <p className="text-gray-800 text-lg md:text-xl font-bold leading-relaxed max-w-2xl mx-auto">
               A 20 Recolher contribui para as transformações sociais através da responsabilidade ambiental. É fundamental para a nossa sobrevivência cuidar da saúde do ecossistema e preservar a saúde humana.
             </p>
           </div>
@@ -156,7 +156,7 @@ export function SobreContent() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
               <h3 className="text-2xl font-black text-[#111111] tracking-tighter mb-6 uppercase">Prontos para agir?</h3>
-              <p className="text-[#6B7280] font-medium text-lg mb-10 leading-relaxed">
+              <p className="text-black/80 font-bold text-lg mb-10 leading-relaxed">
                 Contacte-nos para saber como podemos simplificar a gestão de resíduos da sua entidade com rigor e rapidez.
               </p>
               <div className="space-y-4">
@@ -177,7 +177,7 @@ export function SobreContent() {
             <div className="bg-[#111111] rounded-[3rem] p-12 text-center relative overflow-hidden">
               <div className="relative z-10">
                 <h4 className="text-white font-bold text-xl mb-8 uppercase tracking-tighter">Sede Cantanhede</h4>
-                <p className="text-zinc-400 font-medium mb-10 text-sm">
+                <p className="text-white/80 font-bold mb-10 text-sm">
                   Zona Industrial de Cantanhede, <br />
                   Núcleo 1, Lote 2 Fração E <br />
                   3060-197 Cantanhede

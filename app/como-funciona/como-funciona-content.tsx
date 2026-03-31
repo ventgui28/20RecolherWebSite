@@ -69,20 +69,20 @@ export function ComoFuncionaContent() {
               {/* Text Side */}
               <div className="w-full md:w-1/2">
                 <ScrollReveal direction={index % 2 === 0 ? "right" : "left"}>
-                  <div className="flex items-center space-x-4 mb-10 opacity-40">
-                    <span className="text-4xl font-black text-[#0a2d10]">{step.id}</span>
-                    <div className="w-8 h-px bg-[#0a2d10]" />
+                  <div className="flex items-center space-x-4 mb-10">
+                    <span className="text-4xl font-black text-[#0a2d10]/20">{step.id}</span>
+                    <div className="w-8 h-px bg-[#0a2d10]/20" />
                   </div>
                   
                   <h2 className="text-5xl md:text-8xl font-black text-[#0a2d10] mb-8 tracking-tighter uppercase leading-[0.85]">
                     {step.title}
                   </h2>
                   
-                  <p className="text-[#0a2d10]/60 text-xl md:text-2xl font-medium leading-relaxed mb-6 tracking-tight max-w-xl">
+                  <p className="text-gray-800 text-xl md:text-2xl font-bold leading-relaxed mb-6 tracking-tight max-w-xl">
                     {step.subtitle}
                   </p>
                   
-                  <p className="text-[#0a2d10]/40 text-lg md:text-xl leading-relaxed mb-12 tracking-tight max-w-lg">
+                  <p className="text-black/80 text-lg md:text-xl font-bold leading-relaxed mb-12 tracking-tight max-w-lg">
                     {step.description}
                   </p>
                 </ScrollReveal>
