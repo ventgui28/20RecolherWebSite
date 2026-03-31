@@ -48,10 +48,10 @@ const sectors = [
 
 export function ClientesContent() {
   return (
-    <div className="bg-white selection:bg-green-500 selection:text-white">
+    <div className="bg-transparent selection:bg-green-500 selection:text-white">
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 md:pt-48 md:pb-32 overflow-hidden bg-white">
+      <section className="relative pt-32 pb-24 md:pt-48 md:pb-32 overflow-hidden bg-transparent">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-4xl">
             <motion.div
@@ -84,7 +84,7 @@ export function ClientesContent() {
       </section>
 
       {/* Sectors Grid - Minimalist Cards */}
-      <section className="py-32 bg-[#F9F9FB] border-y border-gray-100">
+      <section className="py-32 bg-transparent border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {sectors.map((sector, idx) => (
@@ -117,7 +117,7 @@ export function ClientesContent() {
       </section>
 
       {/* Trust Quote / Authority Section */}
-      <section className="py-40 bg-white overflow-hidden">
+      <section className="py-40 bg-transparent overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <div className="lg:flex lg:items-center lg:gap-32">
             
@@ -138,7 +138,7 @@ export function ClientesContent() {
             </div>
 
             <div className="lg:w-1/2">
-               <div className="bg-[#F9F9FB] rounded-[4rem] p-12 md:p-20 relative overflow-hidden border border-gray-100">
+               <div className="bg-white/40 backdrop-blur-sm rounded-[4rem] p-12 md:p-20 relative overflow-hidden border border-gray-100">
                   <div className="grid grid-cols-2 gap-8 relative z-10">
                     {[
                       "Escolas Regionais",

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function ServicesSummary() {
   return (
-    <section className="py-40 bg-white relative overflow-hidden">
+    <section className="py-40 bg-transparent relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-technical opacity-20" />
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">

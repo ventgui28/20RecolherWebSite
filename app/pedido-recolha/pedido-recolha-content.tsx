@@ -32,7 +32,7 @@ export function PedidoRecolhaContent() {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-[80vh] flex items-center justify-center bg-white px-6">
+      <div className="min-h-[80vh] flex items-center justify-center bg-transparent px-6">
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -57,7 +57,7 @@ export function PedidoRecolhaContent() {
   }
 
   return (
-    <div className="min-h-screen bg-white pt-32 pb-20 px-6">
+    <div className="min-h-screen bg-transparent pt-32 pb-20 px-6">
       <div className="max-w-3xl mx-auto">
         
         {/* Header da Página */}
@@ -102,7 +102,7 @@ export function PedidoRecolhaContent() {
         </div>
 
         {/* Formulário */}
-        <div className="bg-white border border-gray-100 rounded-[2.5rem] p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.02)]">
+        <div className="bg-white/40 backdrop-blur-sm border border-gray-100 rounded-[2.5rem] p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.02)]">
           <form onSubmit={handleSubmit}>
             <AnimatePresence mode="wait">
               {currentStep === 1 && (

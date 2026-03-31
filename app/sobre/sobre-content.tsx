@@ -42,7 +42,7 @@ const milestones = [
 
 export function SobreContent() {
   return (
-    <div className="bg-white selection:bg-green-500 selection:text-white">
+    <div className="bg-transparent selection:bg-green-500 selection:text-white">
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 md:pt-48 md:pb-40 overflow-hidden border-b border-gray-50">
@@ -77,7 +77,7 @@ export function SobreContent() {
       </section>
 
       {/* Narrative Section */}
-      <section className="py-32 bg-white">
+      <section className="py-32 bg-transparent">
         <div className="max-w-7xl mx-auto px-6">
           <div className="lg:grid lg:grid-cols-2 lg:gap-24 items-start">
             <motion.div 
@@ -128,7 +128,7 @@ export function SobreContent() {
       </section>
 
       {/* Philosophy Section - Transformações Sociais */}
-      <section className="py-32 bg-[#F9F9FB] border-y border-gray-100">
+      <section className="py-32 bg-transparent border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
@@ -151,7 +151,7 @@ export function SobreContent() {
       </section>
 
       {/* Quick Contacts Footer in About */}
-      <section className="py-32 bg-white">
+      <section className="py-32 bg-transparent">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>

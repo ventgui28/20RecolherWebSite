@@ -61,7 +61,9 @@ export default function RootLayout({
       lang="pt"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-screen flex flex-col bg-white text-[#111111] grain-overlay">
+      <body className="min-h-screen flex flex-col text-[#111111] grain-overlay">
+        <div className="bg-luxury-layers" />
+        <div className="bg-luxury-layers-grain" />
         <Navbar />
         <main className="flex-grow pt-20">
           {children}

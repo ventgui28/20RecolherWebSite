@@ -39,10 +39,10 @@ const sustainabilityPillars = [
 
 export function SustentabilidadeContent() {
   return (
-    <div className="bg-white selection:bg-green-500 selection:text-white">
+    <div className="bg-transparent selection:bg-green-500 selection:text-white">
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 md:pt-48 md:pb-40 overflow-hidden bg-white">
+      <section className="relative pt-32 pb-24 md:pt-48 md:pb-40 overflow-hidden bg-transparent">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-4xl">
             <motion.div
@@ -75,7 +75,7 @@ export function SustentabilidadeContent() {
       </section>
 
       {/* Impact Stats - Minimalist Grid */}
-      <section className="py-32 bg-[#F9F9FB] border-y border-gray-100">
+      <section className="py-32 bg-transparent border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8">
             {impactStats.map((stat, idx) => (
@@ -99,7 +99,7 @@ export function SustentabilidadeContent() {
       </section>
 
       {/* Sustainability Pillars - Detailed List */}
-      <section className="py-32 bg-white">
+      <section className="py-32 bg-transparent">
         <div className="max-w-7xl mx-auto px-6">
           <div className="space-y-40">
             {sustainabilityPillars.map((pillar, idx) => (
@@ -123,7 +123,7 @@ export function SustentabilidadeContent() {
                 </div>
 
                 <div className="lg:w-1/2">
-                  <div className="relative aspect-video bg-[#F9F9FB] rounded-[3.5rem] border border-gray-100 flex items-center justify-center group overflow-hidden">
+                  <div className="relative aspect-video bg-white/40 backdrop-blur-sm rounded-[3.5rem] border border-gray-100 flex items-center justify-center group overflow-hidden">
                      {/* Abstract Environmental Visualization */}
                      <Globe className="h-24 w-24 text-gray-200 group-hover:text-green-100 transition-colors duration-1000 group-hover:scale-110" />
                      <div className="absolute inset-0 bg-gradient-to-tr from-green-500/5 to-transparent" />

@@ -325,7 +325,7 @@ export function ServicosContent() {
       </section>
 
       {/* CTA Final */}
-      <section className="py-60 bg-white relative overflow-hidden">
+      <section className="py-60 bg-transparent relative overflow-hidden">
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <ScrollReveal>
             <h2 className="text-5xl md:text-8xl font-black text-black mb-16 tracking-[-0.07em] leading-[0.85] uppercase">O TEU PARCEIRO <br />DE <span className="text-green-600">CONFIANÇA.</span></h2>

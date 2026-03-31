@@ -9,13 +9,13 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-white selection:bg-green-500 selection:text-white grain-overlay">
+    <div className="bg-transparent selection:bg-green-500 selection:text-white grain-overlay">
       <Hero />
       
       <ServicesSummary />
 
       {/* Luxury Commitment Section */}
-      <section className="py-60 bg-green-50/20 relative overflow-hidden">
+      <section className="py-60 bg-transparent relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-technical opacity-40" />
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -112,7 +112,7 @@ export default function Home() {
       </section>
 
       {/* Elite Call to Action */}
-      <section className="py-60 bg-white relative overflow-hidden">
+      <section className="py-60 bg-transparent relative overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-green-100 to-transparent" />
         
         <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
