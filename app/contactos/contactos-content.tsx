@@ -178,24 +178,70 @@ export function ContactosContent() {
         </div>
       </section>
 
-      {/* Visual Map Placeholder - Minimalist Elite */}
-      <section className="py-20 bg-transparent">
+      {/* Interactive Map Section - Ultra Luxury Precision */}
+      <section className="pb-32 bg-transparent">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="relative aspect-[21/9] bg-white/40 backdrop-blur-sm rounded-[3rem] border border-gray-100 flex items-center justify-center group overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
-             <div className="text-center">
-                <div className="w-20 h-20 bg-white p-5 rounded-full shadow-2xl mx-auto mb-6 flex items-center justify-center">
-                  <MapPin className="h-8 w-8 text-green-600" />
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="group relative w-full h-[600px] rounded-[3.5rem] overflow-hidden border border-white/20 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.15)] bg-white/10 backdrop-blur-md"
+          >
+            {/* Elegant Map Controls & Info Card - Restored */}
+            <div className="absolute top-10 left-10 z-20 pointer-events-none md:pointer-events-auto">
+              <motion.div 
+                initial={{ x: -20, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                className="bg-white/80 backdrop-blur-xl p-8 rounded-[2.5rem] border border-white/50 shadow-2xl max-w-sm"
+              >
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                  <span className="text-[10px] font-black uppercase tracking-[0.3em] text-green-600">Sede Global</span>
                 </div>
-                <h4 className="text-[#111111] font-black text-2xl tracking-tighter uppercase mb-2">Cantanhede Innovation Hub</h4>
-                <p className="text-[#6B7280] font-medium text-sm tracking-widest uppercase">Zona Industrial, Núcleo 1, Lote 2</p>
-             </div>
-             <div className="absolute inset-0 opacity-5 pointer-events-none">
-                <div className="w-full h-px bg-black absolute top-1/3 -rotate-12" />
-                <div className="w-full h-px bg-black absolute top-2/3 rotate-45" />
-                <div className="h-full w-px bg-black absolute left-1/3 rotate-12" />
-                <div className="h-full w-px bg-black absolute right-1/4 -rotate-45" />
-             </div>
-          </div>
+                <h4 className="text-2xl font-black text-[#111111] tracking-tighter mb-2 leading-none uppercase">
+                  Zona Industrial <br /> de Cantanhede
+                </h4>
+                <p className="text-[#6B7280] text-sm font-medium mb-8 leading-relaxed">
+                  Núcleo 1, Lote 2 — Fração E <br />
+                  3060-197 Cantanhede, Portugal
+                </p>
+                <div className="flex flex-col space-y-3">
+                  <a 
+                    href="https://www.google.com/maps/dir/?api=1&destination=20+Recolher-Gestão+de+Residuos,+Lda"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between w-full px-6 py-4 bg-[#111111] text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-green-600 transition-all group/btn"
+                  >
+                    <span>Iniciar Navegação</span>
+                    <Send className="h-4 w-4 transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+                  </a>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* The Map Core - Official Business Location (Pure View / UI Clipped) */}
+            <div className="absolute inset-0 overflow-hidden rounded-[3.5rem]">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d822.4634702222418!2d-8.605591399999987!3d40.354710000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2251ed8227a19f%3A0x9437f3302c9088ac!2s20%20Recolher-Gest%C3%A3o%20de%20Residuos%2C%20Lda!5e1!3m2!1spt-PT!2spt!4v1774949377299!5m2!1spt-PT!2spt" 
+                width="100%" 
+                height="100%" 
+                style={{ 
+                  border: 0, 
+                  filter: 'contrast(1.05) brightness(1)',
+                  width: 'calc(100% + 400px)',
+                  height: 'calc(100% + 400px)',
+                  position: 'absolute',
+                  top: '-200px',
+                  left: '-200px'
+                }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localização Oficial 20 Recolher"
+              />
+            </div>
+          </motion.div>
         </div>
       </section>
 
