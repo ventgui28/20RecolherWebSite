@@ -1,4 +1,4 @@
-# 20 Recolher | Website Institucional de Elite
+﻿# 20 Recolher | Website Institucional de Elite
 
 ## Visão Geral
 Este é o repositório oficial do novo website da **20 Recolher**, uma empresa líder na gestão de resíduos e REEE em Cantanhede. O projeto foi desenvolvido com uma filosofia de **Minimalismo de Luxo (Clean Luxury)**, focada na autoridade institucional, clareza visual e performance de excelência.
@@ -31,7 +31,7 @@ app/
 │   └── pedido-recolha/  # Formulário de Concierge Multi-passo
 ├── layout.tsx           # Estrutura global (Navbar, Footer, WhatsApp)
 ├── template.tsx         # Transições de página sincronizadas
-└── globals.css          # Design System (Pure White & Emerald)
+└── globals.css          # Design System (Pure White & Verde Vibrante)
 
 components/
 ├── ui/                  # Componentes base Shadcn/UI
@@ -47,7 +47,7 @@ components/
 
 1. **Espaço Negativo (Whitespace):** Uso generoso de margens para focar a atenção no conteúdo de autoridade.
 2. **Tipografia Contrastante:** Títulos em Preto Profundo (`#111111`) com pesos fortes contra corpo de texto leve.
-3. **Acento Estratégico:** Uso do Verde Esmeralda (`#10B981`) apenas como símbolo de sustentabilidade e ação.
+3. **Acento Estratégico:** Uso do Verde Vibrante (`#34bf49`) apenas como símbolo de sustentabilidade e ação.
 4. **Fluidez Orgânica:** Animações baseadas em curvas `cubic-bezier` personalizadas para uma sensação de qualidade superior.
 
 ---
@@ -69,3 +69,5 @@ O website estará disponível em `http://localhost:3000`.
 ## 📄 Licença
 Direitos Reservados © 2026 20 Recolher.
 Desenvolvido com rigor e compromisso ambiental em Cantanhede, Portugal.
+
+

@@ -1,4 +1,4 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 @theme {
   --font-sans: var(--font-geist-sans);
@@ -7,24 +7,24 @@
 
 :root {
   --background: #FFFFFF;
-  --foreground: #012F24; /* Deep Emerald Black */
+  --foreground: #0a2d10; /* Deep Forest Black */
   --card: #FFFFFF;
-  --card-foreground: #012F24;
+  --card-foreground: #0a2d10;
   --popover: #FFFFFF;
-  --popover-foreground: #012F24;
-  --primary: #10B981;
+  --popover-foreground: #0a2d10;
+  --primary: #34bf49;
   --primary-foreground: #FFFFFF;
-  --secondary: #D1FAE5; /* Soft Emerald */
-  --secondary-foreground: #064E3B;
-  --muted: #F0FDF4;
-  --muted-foreground: #065F46;
-  --accent: #ECFDF5;
-  --accent-foreground: #10B981;
+  --secondary: #f0faf2; /* Soft Vibrant Mint */
+  --secondary-foreground: #0a2d10;
+  --muted: #f4fcf6;
+  --muted-foreground: #3d5c44;
+  --accent: #fafffb;
+  --accent-foreground: #34bf49;
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
-  --border: rgba(16, 185, 129, 0.08);
-  --input: #F0FDF4;
-  --ring: #10B981;
+  --border: rgba(52, 191, 73, 0.08);
+  --input: #f4fcf6;
+  --ring: #34bf49;
   --radius: 1.5rem;
 }
 
@@ -62,8 +62,8 @@
 .bg-grid-technical {
   background-size: 60px 60px;
   background-image: 
-    linear-gradient(to right, rgba(16,185,129,0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(16,185,129,0.03) 1px, transparent 1px);
+    linear-gradient(to right, rgba(52, 191, 73, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(52, 191, 73, 0.03) 1px, transparent 1px);
   mask-image: radial-gradient(circle at center, black, transparent 80%);
 }
 
@@ -72,26 +72,26 @@
   background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(28px) saturate(200%);
   -webkit-backdrop-filter: blur(28px) saturate(200%);
-  border: 1px solid rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(52, 191, 73, 0.08);
   box-shadow: 
-    0 8px 32px -4px rgba(16, 185, 129, 0.05),
+    0 8px 32px -4px rgba(52, 191, 73, 0.05),
     inset 0 0 80px rgba(255, 255, 255, 0.4);
 }
 
 /* Elite Typography - Ultra Sharp */
 .text-elite {
-  color: #012F24;
+  color: #0a2d10;
   letter-spacing: -0.04em;
   -webkit-font-smoothing: antialiased;
 }
 
 /* Luxury Bento Card */
 .bento-card {
-  @apply relative overflow-hidden bg-white border border-emerald-100/30 rounded-[3rem] p-12 transition-all duration-700 hover:border-emerald-300/40 hover:shadow-[0_40px_100px_-20px_rgba(16,185,129,0.06)];
+  @apply relative overflow-hidden bg-white border border-green-100/30 rounded-[3rem] p-12 transition-all duration-700 hover:border-green-300/40 hover:shadow-[0_40px_100px_-20px_rgba(52,191,73,0.06)];
 }
 
-.bento-card-emerald {
-  @apply relative overflow-hidden bg-gradient-to-br from-[#064E3B] to-[#012F24] text-white rounded-[3rem] p-12 transition-all duration-700 border border-emerald-800/50 hover:shadow-[0_40px_100px_-20px_rgba(16,185,129,0.3)];
+.bento-card-green {
+  @apply relative overflow-hidden bg-gradient-to-br from-[#1e6b2a] to-[#0a2d10] text-white rounded-[3rem] p-12 transition-all duration-700 border border-green-800/50 hover:shadow-[0_40px_100px_-20px_rgba(52,191,73,0.3)];
 }
 
 /* Hero Typography Scale */
@@ -103,7 +103,7 @@
 }
 
 .btn-elite {
-  @apply relative overflow-hidden bg-[#10B981] text-white px-10 py-5 rounded-full font-bold uppercase tracking-[0.2em] text-[11px] transition-all duration-500 hover:bg-[#059669] hover:shadow-[0_20px_50px_-10px_rgba(16,185,129,0.4)] active:scale-95 flex items-center justify-center;
+  @apply relative overflow-hidden bg-[#34bf49] text-white px-10 py-5 rounded-full font-bold uppercase tracking-[0.2em] text-[11px] transition-all duration-500 hover:bg-[#2da33e] hover:shadow-[0_20px_50px_-10px_rgba(52,191,73,0.4)] active:scale-95 flex items-center justify-center;
 }
 
 .btn-elite::after {
@@ -124,7 +124,7 @@
 }
 
 .btn-elite-outline {
-  @apply relative overflow-hidden bg-transparent border-2 border-[#10B981] text-[#10B981] px-10 py-4.5 rounded-full font-bold uppercase tracking-[0.2em] text-[11px] transition-all duration-500 hover:bg-[#10B981] hover:text-white active:scale-95 flex items-center justify-center;
+  @apply relative overflow-hidden bg-transparent border-2 border-[#34bf49] text-[#34bf49] px-10 py-4.5 rounded-full font-bold uppercase tracking-[0.2em] text-[11px] transition-all duration-500 hover:bg-[#34bf49] hover:text-white active:scale-95 flex items-center justify-center;
 }
 
 /* Elite High-Performance Background */
@@ -132,7 +132,7 @@
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-color: #F0F2F1; /* Crisp Pearl Gray for depth */
+  background-color: #f7faf8; /* Crisp Green-Gray for depth */
   pointer-events: none;
 }
 
@@ -147,7 +147,7 @@
 }
 
 /* Clear Depth Separation: Content cards MUST be Pure White */
-.bento-card, .bento-card-emerald, .glass {
+.bento-card, .bento-card-ocean, .glass {
   @apply shadow-[0_20px_50px_-15px_rgba(0,0,0,0.05)];
 }
 
@@ -186,5 +186,6 @@ body {
 a, button, [role="button"] {
   cursor: pointer !important;
 }
+
 
 

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle, X } from "lucide-react";
@@ -49,7 +49,7 @@ export function WhatsAppButton() {
                   >
                     <X className="h-3 w-3" />
                   </button>
-                  <p className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest mb-1">Online agora</p>
+                  <p className="text-[10px] font-bold text-green-600 uppercase tracking-widest mb-1">Online agora</p>
                   <p className="text-[12px] font-medium text-[#111111] leading-tight">Como posso ajudar com a sua recolha hoje?</p>
                 </motion.div>
               )}
@@ -63,14 +63,14 @@ export function WhatsAppButton() {
               className="group flex items-center justify-center w-16 h-16 bg-white border border-gray-100 rounded-full shadow-[0_20px_50px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_50px_rgba(16,185,129,0.2)] transition-all duration-500 overflow-hidden"
               aria-label="Contact via WhatsApp"
             >
-              <div className="absolute inset-0 bg-emerald-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <MessageCircle className="h-7 w-7 text-emerald-600 relative z-10 transition-transform duration-500 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-green-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <MessageCircle className="h-7 w-7 text-green-600 relative z-10 transition-transform duration-500 group-hover:scale-110" />
             </a>
 
             {/* Status Indicator (Pulse) */}
             <span className="absolute top-0 right-0 flex h-4 w-4">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-4 w-4 bg-emerald-500 border-2 border-white"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-4 w-4 bg-green-500 border-2 border-white"></span>
             </span>
           </motion.div>
         )}
@@ -78,3 +78,4 @@ export function WhatsAppButton() {
     </div>
   );
 }
+

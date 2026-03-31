@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { 
@@ -48,7 +48,7 @@ const sectors = [
 
 export function ClientesContent() {
   return (
-    <div className="bg-white selection:bg-emerald-500 selection:text-white">
+    <div className="bg-white selection:bg-green-500 selection:text-white">
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 md:pt-48 md:pb-32 overflow-hidden bg-white">
@@ -57,7 +57,7 @@ export function ClientesContent() {
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-bold uppercase tracking-[0.2em] mb-8"
+              className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-green-50 text-green-700 text-[10px] font-bold uppercase tracking-[0.2em] mb-8"
             >
               <Building className="h-3.5 w-3.5" />
               <span>Ecossistemas de Confiança</span>
@@ -69,7 +69,7 @@ export function ClientesContent() {
               className="text-5xl md:text-8xl font-black text-[#111111] tracking-tighter leading-[0.9] mb-12 uppercase"
             >
               PARCEIRO DE <br />
-              <span className="text-emerald-600">CONFIANÇA.</span>
+              <span className="text-green-600">CONFIANÇA.</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -96,7 +96,7 @@ export function ClientesContent() {
                 viewport={{ once: true }}
                 className="bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] group hover:shadow-[0_30px_60px_rgba(0,0,0,0.05)] transition-all duration-500"
               >
-                <div className="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-500">
+                <div className="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-green-600 group-hover:text-white transition-all duration-500">
                   <sector.icon className="h-7 w-7" />
                 </div>
                 <h3 className="text-2xl font-bold text-[#111111] mb-4 tracking-tighter uppercase">{sector.title}</h3>
@@ -122,7 +122,7 @@ export function ClientesContent() {
           <div className="lg:flex lg:items-center lg:gap-32">
             
             <div className="lg:w-1/2 mb-16 lg:mb-0">
-              <h2 className="text-emerald-600 text-[11px] font-bold uppercase tracking-[0.4em] mb-8 italic">Voz da Excelência</h2>
+              <h2 className="text-green-600 text-[11px] font-bold uppercase tracking-[0.4em] mb-8 italic">Voz da Excelência</h2>
               <p className="text-3xl md:text-5xl font-black text-[#111111] tracking-tighter leading-tight mb-12 uppercase italic">
                 "A CONFIANÇA É O NOSSO <br />RESÍDUO MAIS PRECIOSO."
               </p>
@@ -130,7 +130,7 @@ export function ClientesContent() {
                 <p>
                   Não somos apenas uma empresa de recolha; somos um parceiro estratégico que entende as nuances de cada instituição.
                 </p>
-                <div className="flex items-center space-x-3 text-emerald-600 font-bold text-sm tracking-widest uppercase pt-6">
+                <div className="flex items-center space-x-3 text-green-600 font-bold text-sm tracking-widest uppercase pt-6">
                   <ShieldCheck className="h-6 w-6" />
                   <span>Conformidade Documental Absoluta</span>
                 </div>
@@ -149,13 +149,13 @@ export function ClientesContent() {
                       "Banca & Seguros"
                     ].map((item) => (
                       <div key={item} className="flex items-center space-x-3 text-[#111111] font-bold text-sm">
-                        <CheckCircle2 className="h-5 w-5 text-emerald-600" />
+                        <CheckCircle2 className="h-5 w-5 text-green-600" />
                         <span className="tracking-tight uppercase">{item}</span>
                       </div>
                     ))}
                   </div>
                   {/* Background decoration */}
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-100/30 rounded-full blur-3xl -mr-16 -mt-16" />
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-green-100/30 rounded-full blur-3xl -mr-16 -mt-16" />
                </div>
             </div>
 
@@ -174,7 +174,7 @@ export function ClientesContent() {
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8">
             <Link
               href="/pedido-recolha"
-              className="bg-emerald-600 text-white px-12 py-5 rounded-2xl font-bold hover:bg-emerald-700 transition-all text-xs uppercase tracking-[0.2em] shadow-2xl shadow-emerald-950/20"
+              className="bg-green-600 text-white px-12 py-5 rounded-2xl font-bold hover:bg-green-700 transition-all text-xs uppercase tracking-[0.2em] shadow-2xl shadow-green-950/20"
             >
               Pedir Recolha de Elite
             </Link>
@@ -191,3 +191,4 @@ export function ClientesContent() {
     </div>
   );
 }
+

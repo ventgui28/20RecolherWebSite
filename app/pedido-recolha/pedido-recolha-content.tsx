@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -38,8 +38,8 @@ export function PedidoRecolhaContent() {
           animate={{ opacity: 1, scale: 1 }}
           className="max-w-md w-full text-center"
         >
-          <div className="w-20 h-20 bg-emerald-50 rounded-full flex items-center justify-center mx-auto mb-8">
-            <CheckCircle2 className="h-10 w-10 text-emerald-600" />
+          <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-8">
+            <CheckCircle2 className="h-10 w-10 text-green-600" />
           </div>
           <h2 className="text-3xl font-black text-[#111111] mb-4 tracking-tighter">SOLICITAÇÃO RECEBIDA.</h2>
           <p className="text-[#6B7280] font-medium mb-10 leading-relaxed">
@@ -47,7 +47,7 @@ export function PedidoRecolhaContent() {
           </p>
           <button 
             onClick={() => window.location.href = "/"}
-            className="w-full py-4 bg-[#111111] text-white font-bold rounded-2xl hover:bg-emerald-600 transition-all tracking-widest text-xs uppercase"
+            className="w-full py-4 bg-[#111111] text-white font-bold rounded-2xl hover:bg-green-600 transition-all tracking-widest text-xs uppercase"
           >
             Voltar ao Início
           </button>
@@ -65,7 +65,7 @@ export function PedidoRecolhaContent() {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-bold uppercase tracking-[0.2em] mb-6"
+            className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-green-50 text-green-700 text-[10px] font-bold uppercase tracking-[0.2em] mb-6"
           >
             <Truck className="h-3.5 w-3.5" />
             <span>Serviço de Concierge Ambiental</span>
@@ -116,20 +116,20 @@ export function PedidoRecolhaContent() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label className="text-[11px] font-bold uppercase tracking-widest text-[#111111]">Nome da Entidade</label>
-                      <input type="text" placeholder="Ex: Empresa S.A." className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-emerald-500/20 outline-none transition-all placeholder:text-gray-300 font-medium" />
+                      <input type="text" placeholder="Ex: Empresa S.A." className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all placeholder:text-gray-300 font-medium" />
                     </div>
                     <div className="space-y-2">
                       <label className="text-[11px] font-bold uppercase tracking-widest text-[#111111]">NIF</label>
-                      <input type="text" placeholder="9 dígitos" className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-emerald-500/20 outline-none transition-all placeholder:text-gray-300 font-medium" />
+                      <input type="text" placeholder="9 dígitos" className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all placeholder:text-gray-300 font-medium" />
                     </div>
                   </div>
                   <div className="space-y-2">
                     <label className="text-[11px] font-bold uppercase tracking-widest text-[#111111]">Email Profissional</label>
-                    <input type="email" placeholder="geral@empresa.pt" className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-emerald-500/20 outline-none transition-all placeholder:text-gray-300 font-medium" />
+                    <input type="email" placeholder="geral@empresa.pt" className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all placeholder:text-gray-300 font-medium" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-[11px] font-bold uppercase tracking-widest text-[#111111]">Contacto Telefónico</label>
-                    <input type="tel" placeholder="+351 ..." className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-emerald-500/20 outline-none transition-all placeholder:text-gray-300 font-medium" />
+                    <input type="tel" placeholder="+351 ..." className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all placeholder:text-gray-300 font-medium" />
                   </div>
                 </motion.div>
               )}
@@ -144,7 +144,7 @@ export function PedidoRecolhaContent() {
                 >
                   <div className="space-y-2">
                     <label className="text-[11px] font-bold uppercase tracking-widest text-[#111111]">Tipo de Resíduos</label>
-                    <select className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-emerald-500/20 outline-none transition-all font-medium text-gray-600 appearance-none">
+                    <select className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all font-medium text-gray-600 appearance-none">
                       <option>REEE (Eletrónicos)</option>
                       <option>Metais</option>
                       <option>Papel e Cartão</option>
@@ -154,11 +154,11 @@ export function PedidoRecolhaContent() {
                   </div>
                   <div className="space-y-2">
                     <label className="text-[11px] font-bold uppercase tracking-widest text-[#111111]">Volume Estimado</label>
-                    <input type="text" placeholder="Ex: 500kg, 2 Contentores, etc." className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-emerald-500/20 outline-none transition-all placeholder:text-gray-300 font-medium" />
+                    <input type="text" placeholder="Ex: 500kg, 2 Contentores, etc." className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all placeholder:text-gray-300 font-medium" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-[11px] font-bold uppercase tracking-widest text-[#111111]">Notas de Manuseamento</label>
-                    <textarea rows={4} placeholder="Descreva particularidades da recolha..." className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-emerald-500/20 outline-none transition-all placeholder:text-gray-300 font-medium resize-none"></textarea>
+                    <textarea rows={4} placeholder="Descreva particularidades da recolha..." className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all placeholder:text-gray-300 font-medium resize-none"></textarea>
                   </div>
                 </motion.div>
               )}
@@ -173,14 +173,14 @@ export function PedidoRecolhaContent() {
                 >
                   <div className="space-y-2">
                     <label className="text-[11px] font-bold uppercase tracking-widest text-[#111111]">Local de Recolha</label>
-                    <input type="text" placeholder="Morada completa" className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-emerald-500/20 outline-none transition-all placeholder:text-gray-300 font-medium" />
+                    <input type="text" placeholder="Morada completa" className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all placeholder:text-gray-300 font-medium" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-[11px] font-bold uppercase tracking-widest text-[#111111]">Data Preferencial</label>
-                    <input type="date" className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-emerald-500/20 outline-none transition-all font-medium text-gray-600" />
+                    <input type="date" className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-green-500/20 outline-none transition-all font-medium text-gray-600" />
                   </div>
-                  <div className="p-6 bg-emerald-50 rounded-2xl border border-emerald-100">
-                    <p className="text-emerald-800 text-sm font-medium leading-relaxed">
+                  <div className="p-6 bg-green-50 rounded-2xl border border-green-100">
+                    <p className="text-green-800 text-sm font-medium leading-relaxed">
                       <strong>Nota de Elite:</strong> Após a submissão, a nossa equipa logística irá verificar a disponibilidade e enviar-lhe-á a confirmação oficial via email.
                     </p>
                   </div>
@@ -205,7 +205,7 @@ export function PedidoRecolhaContent() {
                 <button
                   type="button"
                   onClick={nextStep}
-                  className="flex items-center space-x-2 px-8 py-4 bg-[#111111] text-white font-bold rounded-2xl hover:bg-emerald-600 transition-all text-xs uppercase tracking-widest"
+                  className="flex items-center space-x-2 px-8 py-4 bg-[#111111] text-white font-bold rounded-2xl hover:bg-green-600 transition-all text-xs uppercase tracking-widest"
                 >
                   <span>Próximo Passo</span>
                   <ArrowRight className="h-4 w-4" />
@@ -213,7 +213,7 @@ export function PedidoRecolhaContent() {
               ) : (
                 <button
                   type="submit"
-                  className="px-12 py-4 bg-emerald-600 text-white font-bold rounded-2xl hover:bg-emerald-700 transition-all text-xs uppercase tracking-widest shadow-xl shadow-emerald-900/10"
+                  className="px-12 py-4 bg-green-600 text-white font-bold rounded-2xl hover:bg-green-700 transition-all text-xs uppercase tracking-widest shadow-xl shadow-green-900/10"
                 >
                   Confirmar Pedido
                 </button>
@@ -226,3 +226,4 @@ export function PedidoRecolhaContent() {
     </div>
   );
 }
+

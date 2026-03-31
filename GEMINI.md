@@ -1,10 +1,10 @@
-# Contexto de Desenvolvimento: 20 Recolher Website
+﻿# Contexto de Desenvolvimento: 20 Recolher Website
 
 ## 🎯 Visão do Projeto
 Website institucional de elite para a empresa **20 Recolher** (Cantanhede), focado na gestão de resíduos e REEE. O design segue o conceito **"Minimalismo de Luxo" (Clean Luxury)**, inspirado na Apple e Tesla.
 
 ### 💎 Identidade Visual
-- **Paleta:** Branco Puro (`#FFFFFF`), Texto em Preto Profundo (`#111111`), Acentos em Verde Esmeralda (`#10B981`).
+- **Paleta:** Branco Puro (`#FFFFFF`), Texto em Preto Profundo (`#111111`), Acentos em Verde Vibrante (`#34bf49`).
 - **Filosofia:** Espaço negativo generoso, tipografia imponente, transparências cristalinas (Glassmorphism).
 - **Animações:** Fluidez orgânica via Framer Motion com curvas `cubic-bezier` personalizadas (Apple-style).
 
@@ -58,3 +58,5 @@ Obrigatório o uso de **Conventional Commits** em **Português de Portugal (pt-p
 
 ---
 *Ficheiro gerado para transição de sessão em 30 de Março de 2026.*
+
+

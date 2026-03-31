@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { 
@@ -42,7 +42,7 @@ const milestones = [
 
 export function SobreContent() {
   return (
-    <div className="bg-white selection:bg-emerald-500 selection:text-white">
+    <div className="bg-white selection:bg-green-500 selection:text-white">
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 md:pt-48 md:pb-40 overflow-hidden border-b border-gray-50">
@@ -51,7 +51,7 @@ export function SobreContent() {
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-bold uppercase tracking-[0.2em] mb-8"
+              className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-green-50 text-green-700 text-[10px] font-bold uppercase tracking-[0.2em] mb-8"
             >
               <span>O Nosso Legado</span>
             </motion.div>
@@ -62,7 +62,7 @@ export function SobreContent() {
               className="text-5xl md:text-8xl font-black text-[#111111] tracking-tighter leading-[0.9] mb-12 uppercase"
             >
               EXCELÊNCIA <br />
-              <span className="text-emerald-600">DESDE 2014.</span>
+              <span className="text-green-600">DESDE 2014.</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -70,7 +70,7 @@ export function SobreContent() {
               transition={{ delay: 0.2 }}
               className="text-[#6B7280] text-xl md:text-2xl font-medium leading-relaxed tracking-tight"
             >
-              Somos uma equipa jovem e dinâmica licenciada pela <span className="text-[#111111] font-bold underline decoration-emerald-500/30 underline-offset-4">CCDRC</span>, dedicada à proteção do meio ambiente através da gestão rigorosa de resíduos.
+              Somos uma equipa jovem e dinâmica licenciada pela <span className="text-[#111111] font-bold underline decoration-green-500/30 underline-offset-4">CCDRC</span>, dedicada à proteção do meio ambiente através da gestão rigorosa de resíduos.
             </motion.p>
           </div>
         </div>
@@ -111,7 +111,7 @@ export function SobreContent() {
                   viewport={{ once: true }}
                   className="flex items-start space-x-6 group"
                 >
-                  <div className="text-emerald-600 font-black text-2xl tracking-tighter w-24 pt-1 italic shrink-0">
+                  <div className="text-green-600 font-black text-2xl tracking-tighter w-24 pt-1 italic shrink-0">
                     {milestone.year}
                   </div>
                   <div className="flex-1 pb-10 border-b border-gray-100 group-last:border-none">
@@ -137,9 +137,9 @@ export function SobreContent() {
               viewport={{ once: true }}
               className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-10 shadow-sm border border-gray-100"
             >
-              <Heart className="h-7 w-7 text-emerald-600" />
+              <Heart className="h-7 w-7 text-green-600" />
             </motion.div>
-            <h2 className="text-emerald-600 text-[11px] font-bold uppercase tracking-[0.4em] mb-8">Janelas de Oportunidade</h2>
+            <h2 className="text-green-600 text-[11px] font-bold uppercase tracking-[0.4em] mb-8">Janelas de Oportunidade</h2>
             <p className="text-3xl md:text-5xl font-black text-[#111111] tracking-tighter leading-tight mb-12 italic">
               "PEQUENAS ATITUDES TÊM UM EFEITO MULTIPLICADOR, CAPAZ DE UMA MUDANÇA EM LARGA ESCALA."
             </p>
@@ -160,15 +160,15 @@ export function SobreContent() {
                 Contacte-nos para saber como podemos simplificar a gestão de resíduos da sua entidade com rigor e rapidez.
               </p>
               <div className="space-y-4">
-                <a href="mailto:info@20recolher.pt" className="flex items-center space-x-4 text-[#111111] font-bold hover:text-emerald-600 transition-colors">
+                <a href="mailto:info@20recolher.pt" className="flex items-center space-x-4 text-[#111111] font-bold hover:text-green-600 transition-colors">
                   <div className="w-10 h-10 bg-gray-50 rounded-xl flex items-center justify-center border border-gray-100">
-                    <History className="h-5 w-5 text-emerald-600" />
+                    <History className="h-5 w-5 text-green-600" />
                   </div>
                   <span>info@20recolher.pt</span>
                 </a>
                 <div className="flex items-center space-x-4 text-[#111111] font-bold">
                   <div className="w-10 h-10 bg-gray-50 rounded-xl flex items-center justify-center border border-gray-100">
-                    <Building2 className="h-5 w-5 text-emerald-600" />
+                    <Building2 className="h-5 w-5 text-green-600" />
                   </div>
                   <span>+351 912 858 819</span>
                 </div>
@@ -182,11 +182,11 @@ export function SobreContent() {
                   Núcleo 1, Lote 2 Fração E <br />
                   3060-197 Cantanhede
                 </p>
-                <Link href="/contactos" className="inline-block bg-emerald-600 text-white px-10 py-4 rounded-2xl font-bold hover:bg-emerald-700 transition-all text-xs uppercase tracking-widest">
+                <Link href="/contactos" className="inline-block bg-green-600 text-white px-10 py-4 rounded-2xl font-bold hover:bg-green-700 transition-all text-xs uppercase tracking-widest">
                   Ver Mapa
                 </Link>
               </div>
-              <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-600/10 rounded-full blur-3xl -mr-16 -mt-16" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-green-600/10 rounded-full blur-3xl -mr-16 -mt-16" />
             </div>
           </div>
         </div>
@@ -195,3 +195,4 @@ export function SobreContent() {
     </div>
   );
 }
+

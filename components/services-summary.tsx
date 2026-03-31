@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { Truck, ShieldCheck, RefreshCw, Factory, ArrowUpRight, Cpu } from "lucide-react";
@@ -17,7 +17,7 @@ export function ServicesSummary() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-emerald-600 text-[10px] font-black uppercase tracking-[0.5em] mb-8"
+            className="text-green-600 text-[10px] font-black uppercase tracking-[0.5em] mb-8"
           >
             Serviços de Alta Precisão
           </motion.h2>
@@ -28,7 +28,7 @@ export function ServicesSummary() {
             viewport={{ once: true }}
             className="flex flex-col md:flex-row md:items-end justify-between gap-12"
           >
-            <h3 className="text-5xl md:text-7xl font-black text-[#012F24] tracking-[-0.05em] leading-[0.9]">
+            <h3 className="text-5xl md:text-7xl font-black text-[#0a2d10] tracking-[-0.05em] leading-[0.9]">
               ECOSSISTEMA <br />DE VALORIZAÇÃO.
             </h3>
             <Link 
@@ -48,13 +48,13 @@ export function ServicesSummary() {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="md:col-span-8 md:row-span-2 bento-card-emerald group flex flex-col justify-between"
+            className="md:col-span-8 md:row-span-2 bento-card-green group flex flex-col justify-between"
           >
             <div className="flex justify-between items-start">
-              <div className="bg-emerald-500/10 p-4 rounded-2xl border border-emerald-500/20">
-                <Cpu className="h-8 w-8 text-emerald-400" />
+              <div className="bg-green-500/10 p-4 rounded-2xl border border-green-500/20">
+                <Cpu className="h-8 w-8 text-green-400" />
               </div>
-              <ArrowUpRight className="h-8 w-8 text-white/20 group-hover:text-emerald-400 transition-colors" />
+              <ArrowUpRight className="h-8 w-8 text-white/20 group-hover:text-green-400 transition-colors" />
             </div>
             <div>
               <h4 className="text-3xl md:text-5xl font-black mb-6 tracking-tighter">GESTÃO DE REEE</h4>
@@ -62,8 +62,8 @@ export function ServicesSummary() {
                 Recuperação especializada de componentes eletrónicos com os mais altos padrões de segurança e certificação europeia.
               </p>
               <div className="flex space-x-4">
-                <span className="px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[10px] font-bold uppercase tracking-widest text-emerald-400">Segurança Total</span>
-                <span className="px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[10px] font-bold uppercase tracking-widest text-emerald-400">Certificado CCDRC</span>
+                <span className="px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/20 text-[10px] font-bold uppercase tracking-widest text-green-400">Segurança Total</span>
+                <span className="px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/20 text-[10px] font-bold uppercase tracking-widest text-green-400">Certificado CCDRC</span>
               </div>
             </div>
           </motion.div>
@@ -76,7 +76,7 @@ export function ServicesSummary() {
             transition={{ delay: 0.2 }}
             className="md:col-span-4 md:row-span-1 bento-card group flex flex-col justify-between"
           >
-            <ShieldCheck className="h-8 w-8 text-emerald-600 mb-6" />
+            <ShieldCheck className="h-8 w-8 text-green-600 mb-6" />
             <div>
               <h4 className="text-2xl font-black mb-4 tracking-tighter">CONFORMIDADE</h4>
               <p className="text-gray-500 text-sm font-medium leading-relaxed">Garantia absoluta de destino final com documentação digital em tempo real.</p>
@@ -91,7 +91,7 @@ export function ServicesSummary() {
             transition={{ delay: 0.3 }}
             className="md:col-span-4 md:row-span-1 bento-card group flex flex-col justify-between bg-gray-50/50"
           >
-            <RefreshCw className="h-8 w-8 text-emerald-600 mb-6" />
+            <RefreshCw className="h-8 w-8 text-green-600 mb-6" />
             <div>
               <h4 className="text-2xl font-black mb-4 tracking-tighter">CIRCULARIDADE</h4>
               <p className="text-gray-500 text-sm font-medium leading-relaxed">Maximizamos o ciclo de vida dos seus recursos industriais.</p>
@@ -104,10 +104,10 @@ export function ServicesSummary() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
-            className="md:col-span-12 md:row-span-1 bento-card group flex items-center justify-between border-emerald-100"
+            className="md:col-span-12 md:row-span-1 bento-card group flex items-center justify-between border-green-100"
           >
             <div className="flex items-center space-x-10">
-              <div className="bg-emerald-600 p-6 rounded-3xl">
+              <div className="bg-green-600 p-6 rounded-3xl">
                  <Truck className="h-10 w-10 text-white" />
               </div>
               <div>
@@ -130,4 +130,6 @@ export function ServicesSummary() {
     </section>
   );
 }
+
+
 

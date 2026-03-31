@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { 
@@ -39,7 +39,7 @@ const sustainabilityPillars = [
 
 export function SustentabilidadeContent() {
   return (
-    <div className="bg-white selection:bg-emerald-500 selection:text-white">
+    <div className="bg-white selection:bg-green-500 selection:text-white">
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 md:pt-48 md:pb-40 overflow-hidden bg-white">
@@ -48,7 +48,7 @@ export function SustentabilidadeContent() {
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-bold uppercase tracking-[0.2em] mb-8"
+              className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-green-50 text-green-700 text-[10px] font-bold uppercase tracking-[0.2em] mb-8"
             >
               <Leaf className="h-3.5 w-3.5" />
               <span>Manifesto Ambiental</span>
@@ -60,7 +60,7 @@ export function SustentabilidadeContent() {
               className="text-5xl md:text-8xl font-black text-[#111111] tracking-tighter leading-[0.9] mb-12"
             >
               CUIDAR DO PRESENTE. <br />
-              <span className="text-emerald-600">PROTEGER O FUTURO.</span>
+              <span className="text-green-600">PROTEGER O FUTURO.</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -88,10 +88,10 @@ export function SustentabilidadeContent() {
                 className="text-center"
               >
                 <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm border border-gray-100">
-                  <stat.icon className="h-5 w-5 text-emerald-600" />
+                  <stat.icon className="h-5 w-5 text-green-600" />
                 </div>
                 <div className="text-5xl font-black text-[#111111] tracking-tighter mb-2 italic">{stat.value}</div>
-                <div className="text-emerald-600 text-[11px] font-bold uppercase tracking-[0.2em]">{stat.label}</div>
+                <div className="text-green-600 text-[11px] font-bold uppercase tracking-[0.2em]">{stat.label}</div>
               </motion.div>
             ))}
           </div>
@@ -112,21 +112,21 @@ export function SustentabilidadeContent() {
                 className={`lg:flex lg:items-center lg:gap-32 ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}
               >
                 <div className="lg:w-1/2 mb-16 lg:mb-0">
-                  <div className="w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center mb-10">
-                    <pillar.icon className="h-8 w-8 text-emerald-600" />
+                  <div className="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center mb-10">
+                    <pillar.icon className="h-8 w-8 text-green-600" />
                   </div>
                   <h3 className="text-4xl md:text-5xl font-black text-[#111111] mb-8 tracking-tighter uppercase">{pillar.title}</h3>
                   <p className="text-[#6B7280] text-lg font-medium leading-relaxed mb-10 max-w-xl">
                     {pillar.description}
                   </p>
-                  <div className="w-20 h-1 bg-emerald-600/20" />
+                  <div className="w-20 h-1 bg-green-600/20" />
                 </div>
 
                 <div className="lg:w-1/2">
                   <div className="relative aspect-video bg-[#F9F9FB] rounded-[3.5rem] border border-gray-100 flex items-center justify-center group overflow-hidden">
                      {/* Abstract Environmental Visualization */}
-                     <Globe className="h-24 w-24 text-gray-200 group-hover:text-emerald-100 transition-colors duration-1000 group-hover:scale-110" />
-                     <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/5 to-transparent" />
+                     <Globe className="h-24 w-24 text-gray-200 group-hover:text-green-100 transition-colors duration-1000 group-hover:scale-110" />
+                     <div className="absolute inset-0 bg-gradient-to-tr from-green-500/5 to-transparent" />
                   </div>
                 </div>
               </motion.div>
@@ -143,7 +143,7 @@ export function SustentabilidadeContent() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-emerald-500 text-[11px] font-bold uppercase tracking-[0.4em] mb-8">Responsabilidade Planetária</h2>
+            <h2 className="text-green-500 text-[11px] font-bold uppercase tracking-[0.4em] mb-8">Responsabilidade Planetária</h2>
             <p className="text-3xl md:text-5xl font-black text-white tracking-tighter mb-16 max-w-4xl mx-auto leading-tight uppercase">
               REDUZIR A PEGADA, <br />MAXIMIZAR O IMPACTO.
             </p>
@@ -164,7 +164,7 @@ export function SustentabilidadeContent() {
             <div className="mt-20">
               <Link
                 href="/pedido-recolha"
-                className="inline-flex items-center px-12 py-5 bg-white text-[#111111] font-bold rounded-2xl hover:bg-emerald-600 hover:text-white transition-all text-sm uppercase tracking-widest"
+                className="inline-flex items-center px-12 py-5 bg-white text-[#111111] font-bold rounded-2xl hover:bg-green-600 hover:text-white transition-all text-sm uppercase tracking-widest"
               >
                 Inicie o seu impacto positivo
                 <ArrowRight className="ml-3 h-4 w-4" />
@@ -174,9 +174,10 @@ export function SustentabilidadeContent() {
         </div>
         
         {/* Background Detail */}
-        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-emerald-600/5 rounded-full blur-[120px] -mr-64 -mb-64" />
+        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-green-600/5 rounded-full blur-[120px] -mr-64 -mb-64" />
       </section>
 
     </div>
   );
 }
+
