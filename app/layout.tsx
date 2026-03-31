@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { WhatsAppButton } from "@/components/whatsapp-button";
+import { SmoothScroll } from "@/components/smooth-scroll";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -64,11 +65,13 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col text-[#111111] grain-overlay">
         <div className="bg-luxury-layers" />
         <div className="bg-luxury-layers-grain" />
-        <Navbar />
-        <main className="flex-grow pt-20">
-          {children}
-        </main>
-        <Footer />
+        <SmoothScroll>
+          <Navbar />
+          <main className="flex-grow pt-20">
+            {children}
+          </main>
+          <Footer />
+        </SmoothScroll>
         <WhatsAppButton />
       </body>
     </html>
