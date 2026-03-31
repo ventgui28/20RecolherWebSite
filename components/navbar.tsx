@@ -9,6 +9,7 @@ import { Menu, X } from "lucide-react";
 const NAV_LINKS = [
   { name: "Processo", href: "/como-funciona" },
   { name: "Serviços", href: "/servicos" },
+  { name: "Compliance", href: "/compliance" },
   { name: "Clientes", href: "/clientes" },
   { name: "Sobre Nós", href: "/sobre" },
   { name: "Contactos", href: "/contactos" },
