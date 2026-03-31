@@ -175,10 +175,16 @@ body {
   font-feature-settings: "ss01", "ss02", "cv01", "cv02";
   overflow-x: hidden;
   perspective: 1000px; /* Enable 3D depth */
+  cursor: default !important;
 }
 
 * {
   border-color: var(--border);
+  cursor: auto !important;
+}
+
+a, button, [role="button"] {
+  cursor: pointer !important;
 }
 
 

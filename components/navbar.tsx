@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Recycle } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
   { name: "Início", href: "/" },
@@ -33,13 +34,16 @@ export function Navbar() {
           }`}
         >
           {/* Logo Section */}
-          <Link href="/" className="flex items-center space-x-3 group relative z-10">
-            <div className="bg-[#10B981] p-2 rounded-xl transition-transform duration-500 group-hover:rotate-[15deg] shadow-lg shadow-emerald-500/20">
-              <Recycle className="h-4 w-4 text-white" />
+          <Link href="/" className="flex items-center group relative z-10">
+            <div className="relative h-12 w-48 transition-transform duration-500 group-hover:scale-105">
+              <Image 
+                src="/logo.png" 
+                alt="20 Recolher Logo" 
+                fill
+                className="object-contain object-left"
+                priority
+              />
             </div>
-            <span className="text-lg font-black tracking-[-0.05em] text-[#012F24]">
-              20 <span className="text-emerald-600">RECOLHER</span>
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -96,8 +100,13 @@ export function Navbar() {
               className="fixed top-0 right-0 bottom-0 w-[85%] bg-white z-50 md:hidden flex flex-col p-12 shadow-[-20px_0_80px_rgba(0,0,0,0.1)]"
             >
               <div className="flex justify-between items-center mb-20">
-                <div className="bg-[#10B981] p-2 rounded-xl">
-                  <Recycle className="h-4 w-4 text-white" />
+                <div className="relative h-10 w-40">
+                  <Image 
+                    src="/logo.png" 
+                    alt="20 Recolher Logo" 
+                    fill
+                    className="object-contain object-left"
+                  />
                 </div>
                 <button
                   onClick={() => setIsOpen(false)}
